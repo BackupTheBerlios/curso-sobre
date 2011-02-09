@@ -1,0 +1,9 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\'on al Software Libre}{4}
+\contentsline {section}{\numberline {1.1}El software como alternativa}{4}
+\contentsline {section}{\numberline {1.2}\IeC {\textquestiondown }Qu\'e es el Software Libre?}{4}
+\contentsline {chapter}{\numberline {2}Licencias}{5}
+\contentsline {chapter}{\numberline {3}El desarrollador y sus motivaciones}{6}
+\contentsline {chapter}{\numberline {4}Aspectos econ\'omivos y de negocio}{7}
+\contentsline {chapter}{\numberline {5}Desarrollo de software libre}{8}
+\contentsline {chapter}{\numberline {6}Casos de estudio}{9}

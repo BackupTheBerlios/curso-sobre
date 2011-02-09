@@ -1,0 +1,49 @@
+% Definimos el estilo del documento
+\documentclass[oneside,12pt,a4paper,spanish]{book}
+% Utilizamos el paquete para utilizar español
+\usepackage[spanish]{babel}
+% Utilizamos el paquete para gestionar acentos
+\usepackage[latin1]{inputenc}
+%Utilizamos el paquete para incorporar graficos postcript
+\usepackage[dvips,final]{epsfig}
+
+\usepackage[spanish]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{a4wide}
+
+\usepackage[normalsize]{subfigure}
+\usepackage{color}
+
+
+%Para que tenga los saltos de linea y no este todo tan junto
+\usepackage{geometry}
+\geometry{a4paper, left=2.6cm, right=2.2cm, top=3.0cm, bottom=3.0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.eps,.sxd,.odg}
+
+\pretolerance=10000
+%Para que no corte las palabras al final de la linea.
+
+% Definimos la zona de la pagina ocupada por el texto
+
+%Empieza el documento
+\begin{document}
+% Definimos titulo, autor, fecha, generamos titulo e indice de contenidos 
+\include{portada}
+
+%Indice
+\tableofcontents
+%Indice de figuras
+\listoffigures
+
+%Capitulos
+\include{introduccion}
+\include{licencias}
+\include{desarrollador_motivaciones}
+\include{aspectos_economicos}
+\include{desarrollo_software}
+\include{casos_estudio}
+
+\end{document}

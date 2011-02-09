@@ -1,0 +1,330 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.12.11)  4 FEB 2011 09:58
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**document.tex
+(./document.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\epsfxsize=\dimen106
+\epsfysize=\dimen107
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/share/texmf-texlive/tex/latex/ntgclass/a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen108
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen109
+\subfiglabelskip=\skip46
+\c@subfigure=\count91
+\c@lofdepth=\count92
+\c@subtable=\count93
+\c@lotdepth=\count94
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count95
+))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count96
+\Gm@cntv=\count97
+\c@Gm@tempcnt=\count98
+\Gm@bindingoffset=\dimen110
+\Gm@wd@mp=\dimen111
+\Gm@odd@mp=\dimen112
+\Gm@even@mp=\dimen113
+\Gm@dimlist=\toks18
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(./document.aux (./portada.aux) (./introduccion.aux) (./licencias.aux)
+(./desarrollador_motivaciones.aux) (./aspectos_economicos.aux)
+(./desarrollo_software.aux) (./casos_estudio.aux))
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen114
+\scratchbox=\box26
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen115
+\MPnumerator=\count103
+\everyMPtoPDFconversion=\toks20
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 73.97733pt, 460.93459pt, 62.59596pt
+v-parts: 85.35826pt, 674.33032pt, 85.35826pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  460.93459pt
+\textheight 674.33032pt
+\oddsidemargin  1.70734pt
+\evensidemargin 1.70734pt
+\topmargin  -18.78552pt
+\headheight 12.0pt
+\headsep    19.8738pt
+\footskip   30.0pt
+\marginparwidth 54.2025pt
+\marginparsep   7.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+\openout2 = `portada.aux'.
+
+(./portada.tex <img/logo_urjc.png, id=1, 522.95375pt x 187.70125pt>
+File: img/logo_urjc.png Graphic file (type png)
+
+<use img/logo_urjc.png>) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_urjc.png (PNG c
+opy)>] (./document.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `document.toc'.
+
+ [2
+
+
+] (./document.lof)
+\tf@lof=\write4
+\openout4 = `document.lof'.
+
+
+[3
+
+]
+\openout2 = `introduccion.aux'.
+
+ (./introduccion.tex
+Cap\'{\i }tulo 1.
+) [4
+
+
+]
+\openout2 = `licencias.aux'.
+
+ (./licencias.tex
+Cap\'{\i }tulo 2.
+) [5
+
+
+
+]
+\openout2 = `desarrollador_motivaciones.aux'.
+
+ (./desarrollador_motivaciones.tex
+Cap\'{\i }tulo 3.
+) [6
+
+
+
+]
+\openout2 = `aspectos_economicos.aux'.
+
+ (./aspectos_economicos.tex
+Cap\'{\i }tulo 4.
+) [7
+
+
+
+]
+\openout2 = `desarrollo_software.aux'.
+
+ (./desarrollo_software.tex
+Cap\'{\i }tulo 5.
+) [8
+
+
+
+]
+\openout2 = `casos_estudio.aux'.
+
+ (./casos_estudio.tex
+Cap\'{\i }tulo 6.
+) [9
+
+
+
+] (./document.aux (./portada.aux) (./introduccion.aux) (./licencias.aux)
+(./desarrollador_motivaciones.aux) (./aspectos_economicos.aux)
+(./desarrollo_software.aux) (./casos_estudio.aux)) ) 
+Here is how much of TeX's memory you used:
+ 2401 strings out of 493848
+ 31765 string characters out of 1152822
+ 91520 words of memory out of 3000000
+ 5612 multiletter control sequences out of 15000+50000
+ 8193 words of font info for 29 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 32i,7n,31p,200b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb>
+Output written on document.pdf (9 pages, 52153 bytes).
+PDF statistics:
+ 45 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

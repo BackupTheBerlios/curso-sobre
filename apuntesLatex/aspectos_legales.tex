@@ -78,14 +78,119 @@ introducido el origen de las prácticas, pasamos a ver uno de los
 elementos que más perjudica al Software Libre, las patentes.
 
 \subsection{Las patentes}
+Una patente otorga el monopolio del invento a su creador durante un
+periodo que va desde 17 a 25 años, según la región. El inventor ha
+dedicado un tiempo al trabajo y recibe esta recompensa. A cambio, el
+invento debe ser públicado. Las terceras partes que quieran trabajar
+sobre él deben llegar a un acuerdo con el titular de la patente.
+
+No se puede patentar una idea. La institución registradora de patentes
+se encarga de acotar los límites del invento. \emph{La patente de una
+  silla, ¿debería permitirme explotar también sillones y sofas?} Sin
+embargo, hay organizaciones como la \emph{Organización Mundial de la
+  Propiedad Intelectual} (OMPI) que están ejerciendo presión para que
+se relajen las restricciones de registro de una patente. No es un
+procedimiento al alcance de cualquiera por lo que unas pocas empresas
+suelen ser dueñas de la inmensa mayoría de patentes. Por otro lado, se
+ha detectado una práctica denominada \emph{patent trolling} que
+engloba a las entidades que se encargan de patentar el mayor número
+posible de inventos, no para explotarlos y lucrarse con ellos, sino
+para obtener beneficios mediante los acuerdos con interesados en el
+invento.
+
+En el software libre las patentes suponen un problema muy grande. El
+acceso al código fuente facilita la detección de infracciones sobre
+patentes. Los autores de software privativo tienen más ventajas en
+este sentido. En Europa, a diferencia de Estados Unidos, todavía no es
+posible patentar software, aunque podría llegar ese momento.
 
 \subsection{El secreto comercial}
+Las empresas tienen el derecho a no hacer público su trabajo. Un
+ejemplo muy claro de este tipo de práctica es la ocultación de la
+fórmula de la \emph{Coca-Cola}. A la compañía no le interesa una
+patente, ya que saben que pueden rentabilizar su producto mucho más
+allá de la vigencia de ésta. Otro ejemplo es la ocultación de la
+ingeniería utilizada entre las diferentes escuderías de la
+\emph{Fórmula 1}, donde el prestigio por ganar el campeonato tiene un
+peso muy grande. En ambos casos se pretende esconder los secretos de
+la empresa para dificultar el trabajo a los competidores.
+
+El secreto comercial resulta más limpio que una patente, en términos
+de mercado. La razón es que permite la coexistencia con terceras
+partes que se dediquen a imitar el producto original. No hay más que
+ver las infinitas variedades de refrescos de cola que se pueden
+adquirir, habiéndose convertido \emph{Pepsi} en el adversario más
+fuerte. En la imitación tiene una gran importancia la ingeniería
+inversa, que permite deducir el proceso de manufacturación a partir
+del producto final. Los secretos mejor guardados se encuentran en las
+grandes compañías, que como viene siendo habitual, ejercen mucha
+presión sobre el Estado cuando se ven amenazados. Por eso, existen
+regiones en las que la ingeniería inversa está prohibida.
+
+En el software, el proceso de creación de un producto es encarnado por
+el código fuente. Lo que permite el secreto comercial es la
+distribución del binario. Por lo tanto, está práctica carece de
+sentido en el software~libre, ya que aplicarla iría en contra de las
+libertades básicas al no disponerse del fuente.
 
 \subsection{Las marcas}
+Una marca es el nombre ---y opcionalmente el logotipo--- que utiliza
+un negocio para promocionarse. Registrar una marca requiere cierto
+desembolso económico, por lo que generalmente no suele
+realizarse. Esto explica en cierta manera por qué es posible que
+existan cientos de bares ``Pepe'', pero dificilmente se encontrará una
+tienda deportiva que utilice el nombre ``Nike''.
+
+En el software~libre, son sólo los grandes productos y compañías los
+que las utilizan. Entre ellos encontramos a Debian, GNOME o GNU. En la
+historia del software~libre se han encontrado problemas por el
+no~registro de una marca. El caso más representativo es el de Linux,
+en el que varias personas registraron esa marca y reclamaron royalties
+a las distintas distribuciones existentes. También es un problema de
+marcas el que tuvieron Firefox y Debian. Esta distribución se negó a
+incluir el navegador por la falta de libertad sobre los logos
+oficiales y el nombre de Firefox. La solución fue incluir el navegador
+con el nombre y el logotipo renombrados, dando como resultado el
+proyecto IceWeasel.
 
 \subsection{Derechos de autor}
+Los derechos de autor surgen para recompensar a los autores de libros
+o de arte. Representan lo que también es conocido como
+\emph{Copyright} y tratan de proteger la expresión de un contenido, no
+el contenido en sí mismo. Por dar un ejemplo actual, todos los días
+vemos en los periódicos artículos que tratan sobre los mismos sucesos,
+pero contados de forma diferente. Si se protegiese el contenido, la
+noticia sólo podría ser publicada en un periódico.
 
-\subsection{Ley de Propiedad Intelectual}
+En España, la encargada de estos derechos~de~autor es la denominada
+Ley~de~Propiedad~Intelectual. Esta ley hace una subdivisión en
+Derechos~Morales y Derechos~Patrimoniales. Los primeros hacen posible
+la autoría de una obra y que se respete su integridad. Son vitalicios
+o indefinidos. Los segundos son los que permiten al autor la
+explotación económica de su trabajo. Tienen un periodo de vigencia de
+70 años\footnote{Otro ejemplo de presión sobre la legislación de la
+  propiedad intelectual es la que ejerce
+  Mickey~Mouse. Misteriosamente, la ley se prolonga cuando este
+  simpático ratón está a punto de pasar al dominio
+  público.}. Actualmente, la forma de obtener los derechos~de~autor es
+automática. En cuanto se crea una obra, entra en vigor. El autor de un
+garabato en una pizarra dispone de todos los derechos sobre él. Hace
+años no se aplicaban por defecto. Es curioso el caso de la mítica
+película de título \emph{La noche de los muertos vivientes} en la que
+olvidaron incluir la (C) de Copyright, por lo que directamente pasó a
+formar parte del dominio público.
+
+\subsection{¿Qué pasa con el Software?}
+Hasta el momento hemos visto diversos mecanismos para tratar la
+propiedad~intelectual. \emph{¿En cual de ellos encaja el Software?} En
+un principio hubo mucha polémica por decidir si se debían aplicar
+patentes o derechos de autor, finalmente se impuso el segundo de
+ellos. No resultaría mantenible solicitar una patente por cada commit
+realizado. Además existían algunas similitudes con las novelas y dicha
+legislación había funcionado bien hasta el momento. No tardarían en
+aparecer incongruencias y situaciones especiales. Y es que el software
+tiene unas características que le hacen muy diferente del resto de
+obras existentes hasta la fecha.
 
 \section{Licencias}
 

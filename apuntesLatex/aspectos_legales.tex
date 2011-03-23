@@ -181,6 +181,7 @@ olvidaron incluir la (C) de Copyright, por lo que directamente pasó a
 formar parte del dominio público.
 
 \subsection{¿Qué pasa con el Software?}
+\label{sub:que_pasa}
 Hasta el momento hemos visto diversos mecanismos para tratar la
 propiedad~intelectual. \emph{¿En cual de ellos encaja el Software?} En
 un principio hubo mucha polémica por decidir si se debían aplicar
@@ -193,4 +194,108 @@ tiene unas características que le hacen muy diferente del resto de
 obras existentes hasta la fecha.
 
 \section{Licencias}
+Si navegando por \emph{la Red} descubrimos un software sin licencia,
+\emph{¿qué podríamos hacer con él?} Acabamos de ver en
+\ref{sub:que_pasa} que lo que aplicamos al software son los
+derechos~de~autor, es decir, la obra automáticamente pasa por defecto
+a restringir todos los derechos de los usuarios. Por tanto, si no
+encontramos la licencia en dicho programa, debemos asumir que no
+podemos hacer absolutamente nada con él. Bien es cierto que sería
+difícil que un juez declarara culpable a una persona por usar ese
+software. Sin embargo, la modificación y redistribución ya sí que
+sería un terreno muy pantanoso.
+
+Entonces, \emph{¿qué es una licencia?} Es un contrato mediante el cual
+el autor se comunica con los usuarios finales. Aunque esto a veces es
+difícil de entender, la licencia no restringe, sino que se encarga de
+otorgar libertades. Sin ella, comprar un programa no nos daría la
+capacidad de usarlo tan siquiera, se debe recordar lo que se comentó
+en el párrafo anterior. La licencia es un contrato muy especial, un
+contrato que ni firmamos ni aceptamos explícitamente. En ocasiones el
+instalador pide la confirmación mediante la típica checkbox
+\emph{I~Agree}, pero hay casos en los que el entorno no permite esta
+posibilidad, como por ejemplo el software embebido en una lavadora.
+
+Las licencias son textos largos y complicados. \emph{¿Qué pasa si no
+  entendemos alguna en concreto?} Siempre que se produce un acuerdo,
+ambas partes deben ser conscientes de las implicaciones que
+conlleva. Por esa razón los bancos encuentran muchos problemas con sus
+clientes, hasta tal punto que algunos acuerdos requieren que el
+interesado tenga un cierto nivel educacional. En el caso del software
+la solución es más sencilla. Si no entendemos la licencia, se debe
+suponer la establecida por defecto, con lo que no se tendría derecho a
+nada. Otro aspecto habitual es el de encontrar una licencia en otra
+lengua. Por ejemplo, la FSF sólo considera como válida la GPL en
+inglés. Las traducciones pueden dar lugar a segundas interpretaciones,
+a veces incluso provocadas. Ante este caso, siempre hay que quedarse
+con la interpretación más restrictiva o consultar directamente al
+autor si fuese posible.
+
+Licenciar software con una licencia libre básica es sencillo. Tan sólo
+debemos incluir las siguiente líneas al principio de los ficheros
+fuente del programa:
+\begin{quotation}
+Copyright (c) 2010 Foobar Developers. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the redistributions of
+source code must retain the above copyright notice.
+\end{quotation}
+Con la primera línea se está ``marcando el terreno''. En ella se puede
+apreciar el año de creación, el nombre del programa y el nombre de los
+autores. La segunda parte del texto es la que otorga al usuario final
+la libertad de uso, redistribución, modificación y redistribución de
+la modificación (principios básicos del software libre). Resulta
+curioso observar como primero se reservan todos los derechos para
+posteriormente concederlos. La única restricción que se impone al
+usuario ---en este ejemplo particular--- es la de mantener la primera
+línea tal cual, con el fin de preservar la autoría. En los siguientes
+apartados se describirán las distintas familias de licencias,
+nombrando para cada una sus ejemplares más representativos.
+
+\subsection{Licencias Académicas}
+Son también conocidas como licencias Minimalistas o de tipo BSD. Son
+muy adecuadas para investigaciones académicas, generalmente
+financiadas por el Estado. Pretenden tener un alcance global, por lo
+que no desean cerrar ninguna puerta. Esto conlleva otorgar todas las
+libertades al usuario final. La única condición a cambio es la de
+conservar la autoría de los creadores. Un ejemplo de software en el
+que se aplica esta licencia es el protocolo TCP/IP. Es un protocolo
+utilizado por cualquier Sistema~Operativo moderno, tanto libre como
+privado. Las libertades que ofrece esta familia rozan las que podemos
+encontrar en un software de dominio~público.
+\begin{description}
+\item[Licencia BSD] Es la más representativa de esta familia. No
+  ofrecen ninguna garantía al usuario final. Éste es una aspecto que
+  siempre ha generado cierta controversia, aunque es bastante
+  comprensible\footnote{Los desarrolladores de software~propietario
+    tan sólo garantizan que el soporte es correcto y que el programa
+    se ejecuta.}. La permisividad de esta licencia provoca que el
+  software se pueda redistribuir tanto en versión de código fuente
+  como en binario. Para el primer caso, se debe mantener la línea del
+  Copyright y la lista de condiciones en los ficheros fuente. Con el
+  formato binario se debe reproducir de alguna manera el mismo texto
+  que para el caso anterior. Por ejemplo, Windows muestra la nota BSD
+  durante la carga del sistema. Se puede leer la plantilla de esta
+  licencia en
+  \url{http://www.opensource.org/licenses/bsd-license.php}.
+\end{description}
+
+\subsection{Licencias Permisivas}
+
+% FIXME: Verificar el siguiente párrafo, ¡es una deducción personal!
+% En las transparencias de licencias vistas en clase se diferencian
+% licencias académicas de licencias permisivas. Sin embargo, en el
+% libro de la asignatura se muestran como un solo conjunto.  
+
+Las licencias permisivas son muy similares a las licencias académicas,
+hasta tal punto que podríamos ver a estas últimas como un subconjunto
+de esta nueva familia.
+
+\subsection{Licencias Copyleft}
+
+\subsubsection{Copyleft débil}
+
+\subsubsection{Copyleft fuerte}
+
 

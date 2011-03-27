@@ -1,23 +1,41 @@
 \chapter{An\'alisis de proyectos}
+\label{CHAP6:Analysis}
 \section{Introducci\'on}
-\paragraph{Los proyectos de software libre son p\'ublicos por naturaleza y podemos tener una serie de datos que podemos encontrar y comparar con otros proyectos.}
-\paragraph{Como todo an\'alisis emp\'irico tenemos que seguir una metodolog\'ia:}
-\subparagraph{1. El proyecto que queremos estudiar.}
-\subparagraph{2. Identificar la fuente de datos. Seguir el sistema de gesti\'on de incidencias, recuperar los datos, y una vez que hemos realizado la gesti\'on de incidencias y la recuperaci\'on de datos tenemos que realizar la miner\'ia de datos, es decir, realizar una t\'ecnica descriptiva de un proyecto.}
-\subparagraph{3. Realizar el an\'alisis. Extraecci\'on la informaci\'on que no es evidente, aport\'andonos m\'as informaci\'on. Por ejemplo, en que meses del a\~no se realiza m\'as trabajos en el proyecto.}
-\subparagraph{4. Realizar un informe explicativo. Una vez realizado nuestro an\'alisis tenemos que componer un informe que explica toda la informaci\'on del proyecto.}
+Los proyectos de software libre son p\'ublicos por naturaleza y podemos tener una serie de datos que podemos encontrar y comparar con otros proyectos.
+
+Como todo an\'alisis emp\'irico tenemos que seguir una metodolog\'ia:
+\begin{enumerate}
+\item
+El proyecto que queremos estudiar.
+\item
+Identificar la fuente de datos. Seguir el sistema de gesti\'on de incidencias, recuperar los datos, y una vez que hemos realizado la gesti\'on de incidencias y la recuperaci\'on de datos tenemos que realizar la miner\'ia de datos, es decir, realizar una t\'ecnica descriptiva de un proyecto.
+\item
+Realizar el an\'alisis. Extraecci\'on la informaci\'on que no es evidente, aport\'andonos m\'as informaci\'on. Por ejemplo, en que meses del a\~no se realiza m\'as trabajos en el proyecto.
+\item
+Realizar un informe explicativo. Una vez realizado nuestro an\'alisis tenemos que componer un informe que explica toda la informaci\'on del proyecto.
+\end{enumerate}
+
 \section{Herramientas para el an\'alisis}
-\paragraph{Para realizar un an\'alisis de proyecto necesitamos un conjunto de herramientas autom\'aticas para evitar errores, para reducir tiempos, y para la replicabilidad. La replicabilidad nos permite construir un proyecto a partir de otro y no empezar de cero ahorr\'andonos un valioso tiempo. 
+Para realizar un an\'alisis de proyecto necesitamos un conjunto de herramientas autom\'aticas para evitar errores, para reducir tiempos, y para la replicabilidad. La replicabilidad nos permite construir un proyecto a partir de otro y no empezar de cero ahorr\'andonos un valioso tiempo. 
 Es deseable que las herramientas que vamos a utilizar sean software libre porque es m\'as f\'acil de integrarlas, extenderlas y aplicarla a nuevas funcionalidades. 
 Para realizar cualquier tipo de an\'alisis estad\'istico tenemos una librer\'ia de R. R es un software libre que sirve para el análisis estad\'istico y gr\'afico en un entorno de programaci\'on. Adem\'as nos permite cargar diferentes bibliotecas o paquetes con finalidades espec\'ificas de c\'alculo o gr\'afico. 
-Por otro lado necesitamos soporte de administraci\'on de herramientas estad\'isticas, esto se traduce a tener un ordenador potente o un servidor potente (gran capacidad de disco duro, ram, cpu potente, etc).}
-\paragraph{Qu\'e podemos usar o aplicar para realizar un an\'alisis:}
-\subparagraph{1. Vamos a utilizar una base de datos, MySQL/SQLite.}
-\subparagraph{2. Una herramienta que extrae la informaci\'on de c\'odigo fuente de los registros y la almacena en una base de datos, CVSAnalY.}
-\subparagraph{3. Y un analizador estad\'istico, GNU R.}
-\paragraph{Para la estaci\'on de datos vamos a extraer informaci\'on de repositorios p\'ublicos como son CVS, SVN y GIT. Nos proporciona un mecanismo autom\'atico que apuntando a una url nos trae la informaci\'on, la parsea y la guarda en una base de datos o en un fichero para poder trabajar.}
-\paragraph{Podemos extraer datos para las acciones de desarrollo, lo vamos a tener en una tabla de la base de datos con nombre "scmlog".
+Por otro lado necesitamos soporte de administraci\'on de herramientas estad\'isticas, esto se traduce a tener un ordenador potente o un servidor potente (gran capacidad de disco duro, ram, cpu potente, etc).
+
+Qu\'e podemos usar o aplicar para realizar un an\'alisis:
+\begin{enumerate}
+\item
+Vamos a utilizar una base de datos, MySQL/SQLite.
+\item
+Una herramienta que extrae la informaci\'on de c\'odigo fuente de los registros y la almacena en una base de datos, CVSAnalY.
+\item
+Y un analizador estad\'istico, GNU R.
+\end{enumerate}
+
+Para la estaci\'on de datos vamos a extraer informaci\'on de repositorios p\'ublicos como son CVS, SVN y GIT. Nos proporciona un mecanismo autom\'atico que apuntando a una url nos trae la informaci\'on, la parsea y la guarda en una base de datos o en un fichero para poder trabajar.
+
+Podemos extraer datos para las acciones de desarrollo, lo vamos a tener en una tabla de la base de datos con nombre "scmlog".
 Tenemos datos registrados de archivos que est\'a en la tabla "file".
-Otra tabla para los datos de las personas involucradas en el proyecto "people".}
+Otra tabla para los datos de las personas involucradas en el proyecto "people".
+
 \section{Algunos an\'alisis}
 

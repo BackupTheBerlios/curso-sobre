@@ -1,4 +1,710 @@
-\chapter{Introducci�n al Software Libre}
-\section{El software como alternativa}
+\chapter{Introducción al \textit{Software Libre}}
+\label{CHAP1:Introduction}
+\section{Introducción y Motivación al \textit{Software Libre}}
 
-\section{�Qu� es el Software Libre?}
+Navegadores \textit{web}, gestores de correo electrónico, juegos, herramientas
+para edición de vídeo, reproductores multimedia, suites ofimáticas, aplicaciones
+de mensajería instantánea, analizadores de tráfico, servidores \textit{HTTP},
+...
+
+Actualmente el \textit{software libre} nos ofrece todo tipo de alternativas
+tanto en el segmento de servidores como en aplicaciones de escritorio que
+estamos acostumbrados a usar a diario. Pero, ¿qué es el \textit{software libre}?
+¿Cuándo nació? ¿Cómo ha evolucionado? A estas y a algunas otras preguntas
+intentaremos responder a lo largo de este primer capítulo de la asignatura.
+
+\subsection{El \textit{Software Libre} como Alternativa}
+
+El modelo tradicional de producción ha conllevado a ciertas anomalías, en el
+fondo, todas provenientes de la idea de que tan sólo el productor puede mejorar
+su producto.
+
+Por otro lado, el productor impone ciertas condiciones a través de
+la licencia del \textit{software}, licencia que se deberá aceptar con tal de
+poder hacer uso del programa, hasta el punto de que en ocasiones, en el momento
+de realizar la compra estamos aceptando los términos de la licencia sin ser
+conscientes de ello.
+
+Otra idea heredada a lo largo de los años es que tan sólo se podrá hacer
+negocio (ingresos y ventas) si se tiene el control absoluto sobre la copia y
+redistribución. Se trata al mismo tiempo de un modelo de negocio basado en la
+exclusividad, de manera que un único productor ofrece ese programa,
+produciéndose por tanto monopolios (sabido es el ejemplo de \textit{Microsoft
+Office}, empleado mayoritariamente de una manera muy probable por tradición y
+por desconocimiento de alternativas). De este modo, se produce un
+monopolio no ya de producto, sino que llega a asociarse ese determinado
+producto con la empresa que lo produce. Además, el productor será el único con
+la potestad para resolver problemas del \textit{software} y mejorarlo, con lo
+que se frena también el proceso de mejora e innovación.
+
+Así pues, el \textit{software} libre supone, en cierto modo, un punto de ruptura
+con respecto a esta visión tradicional dadas las características que presenta y
+que estudiaremos a continuación.
+
+\subsection{¿Qué es el \textit{Software Libre}?}
+
+En el espectro del mundo del \textit{software}, se puede afirmar que
+\textit{software} libre y \textit{software} privativo son antagonistas, extremos
+contrarios el uno respecto al otro.
+
+Al contrario de lo visto en la sección anterior para el caso del modelo
+tradicional, el \textit{software} libre presta una atención muy especial a la
+redistribución y modificación del producto. Es más, el usuario que recibe el
+\textit{software} libre, podrá:
+
+\begin{itemize}
+  \item Usarlo cómo y dónde quiera.
+  \item Redistribuirlo a quien quiera y de la manera que quiera.
+  \item Modificarlo (para mejorarlo, adaptarlo, etc.).
+  \item Redistribuir esas modificaciones.
+\end{itemize}
+
+Estos cuatro puntos se corresponden realmente con las cuatro libertades del
+\textit{software} libre y que se estudiarán en detalle en la sección
+\ref{SUBSEC:DefinicionMotivacion} de este mismo capítulo.
+
+Tal y como se puede entender de los cuatro puntos anteriores, será necesario
+contar con el código fuente.
+
+Y por último, si hay un falso mito en torno al mundo del \textit{software}
+libre, sobre lo que es y lo que no es, ante todo, debe quedar claro lo
+siguiente: \textit{software} libre no es igual a \textit{software} gratis. Esta
+confusión se ha producido a lo largo de los años por el hecho de que
+habitualmente, los usuarios pueden descargarse el software libre de una manera
+gratuita. Es más, en inglés el término ``free'' puede hacer referencia tanto a
+``libre'' como a ``gratis'', por lo que se genera ambigüedad que si bien en
+la lengua española no existe, sí se cuenta con esa misma confusión por razones
+distintas. Este mismo hecho, motivó la aparición de un nuevo término para
+referirse a lo mismo, tal y como se estudiará más adelante: \textit{Open
+Source}.
+
+Debido a esas libertades con que contará el \textit{software} libre frente a
+otros modelos, se tienen una serie de consecuencias como que por ejemplo, el
+modelo de costes será totalmente distinto al del \textit{software} privativo.
+También podrá inspeccionarse, estudiarse, modificarse, etc., cosa impensable
+con el \textit{software} privativo ya que normalmente, es distribuido en forma
+binaria a través de sus ejecutables. También surgen nuevos canales y métodos de
+distribución, al mismo tiempo que los modelos de desarrollo son a la vez que
+revolucionarios, hasta cierto punto sorprendetes; es más, a menudo se incumplen
+las normas básicas que tradicionalmente se han tenido en cuenta como prácticas
+ideales en ingeniería del \textit{software}, y no por ello, los resultados
+finales son de mala calidad. Por último, surge también una fuerte competencia
+en el campo del mantenimiento y soporte del \textit{software} libre. Es decir,
+que de esta manera, se combinan dos poderosos mecanismos: la competencia y la
+cooperación (a menudo, incluso de una manera voluntaria).
+
+Así pues, en este nuevo escenario que se presenta ante el mundo y filosofía del
+\textit{sofware} libre, aparecen un total de hasta cuatro actores: los usuarios
+finales del \textit{software} desarrollado, que podrán ser tanto particulares
+como empresas; el desarrollador o productor del \textit{software}; el integrador
+de sistemas con el fin último de desarrollar soluciones prácticas y eficaces; y
+por el último, el actor encargado de ofrecer mantenimiento, servicio y soporte a
+ese \textit{software}.
+
+Al mismo tiempo, alrededor del \textit{software} libre aparece todo un listado
+de términos que pueden causar sobre lo que verdaderamente es o no es. Del ya
+comentado caso del término ``\textit{Open Source Software}'' que se estudiará en
+mayor profundidad a lo largo del capítulo, podemos decir que en general, y salvo
+excepciones muy puntuales, el \textit{software open source} es también
+\textit{software} libre. Pero a este término se suma también la idea del
+dominio público, en el cual se debe tener claro que el autor realmente está
+cediendo sus derechos a la sociedad. O el término \textit{copyleft}, que hace
+referencia a que ese \textit{software}, tras una serie de redistribuciones,
+mantendrá las libertades para quien lo reciba.
+
+\subsection{Conclusiones}
+
+¿Qué conclusiones existen en la actualidad respecto al mundo del
+\textit{software} libre? Lo cierto es que realmente todavía no se cuenta con la
+suficiente experiencia como para aventurarse a lanzar un veredicto sobre las
+tendencias futuras en el \textit{software} libre. Sin embargo, sí existen
+perspectivas interesantes de cada al futuro, como por ejemplo la buena muestra
+de casos en los que se ha demostrado la viabilidad económica y técnica del
+\textit{software} libre. El modelo favorece a los más competitivos, ya que
+permite estar en la cresta de la ola tecnológica a todos aquellos con verdaderas
+ganas de innovar y para lo cual es necesario tener un buen (y actualizado)
+conocimiento del área, facilitando el trabajo y ofreciendo posibilidades incluso
+a los más pequeños dentro del mercado.
+
+No obstante, todavía quedan problemas por resolver y de los cuales, quizás
+puedan surgir nuevas oportunidades, así como técnicas con las que experimentar
+en muy diversas áreas, desde los modelos de desarrollo hasta los modelos de
+negocio. En cualquier caso, lo que sí parece claro es que se trata de un momento
+en el que toda la industria puede estar cambiando de paradigma y concepción
+acerca del sector, como de hecho bien demuestra la cantidad de grandes
+multinacionales que cada vez con mayor frecuencia e implicación, se acercan al
+\textit{software} libre.
+
+\section{Historia del \textit{Software Libre}}
+
+\subsection{Primeros Años}
+
+Durante los primeros años de la computación (décadas de 1950 y 1960), la
+situación del \textit{software} dentro del mundo de la computación era muy
+similar a la filosofía que hoy conocemos bajo el término ``\textit{software
+libre}''. En aquellos años, el \textit{software} (incluyendo su código fuente)
+estaba incluído de manera inherente a la adquisición del \textit{hardware},
+hasta el punto que el \textit{software} no era ni visto ni considerado como una
+pieza independiente del \textit{hardware}, es decir, que el \textit{software}
+era una especie de acompañante. Debido a esto, los profesionales de la
+computación podían mejorar (y así lo hacían) ese \textit{software},
+compartiéndolo con otros grupos. Es más, siempre que se pagase el contrato, se
+tenía acceso al catálogo de \textit{software} del fabricante. Sin embargo, esta
+situación cambió radicalmente el 30 de junio de 1969, cuando \textit{IBM}
+(principal fabricante y con mucha diferencia sobre sus competidores) anunció que
+a partir de 1970, dejaría de incluir el \textit{software} con sus computadores y
+comenzó a venderlo de manera independiente. Fue entonces cuando se empezó a ver
+el \textit{software} como un producto con valor intrínseco, y con ello, se
+limitaron y restringieron sobremanera las posibilidades que sus usuarios tenían
+de estudiar el código, mejorarlo, compartirlo, etc.
+
+Con esta situación, a mitad de la década de 1970 ya era completamente habitual
+encontrarse con \textit{software} privativo, lo que supuso un fuerte cambio
+cultura entre los profesionales del sector. Pero pese a que la tendencia era
+hacia la exploración del nuevo modelo ofrecido por el \textit{software}
+privativo, existieron durante estos años iniciativas importantes que encajan a
+la perfección con lo que hoy conocemos como \textit{software} libre mediante las
+cuales se perseguía una herramienta determinada, amparada ya fuera por motivos
+éticos (costumbre en la comunidad matemática) o prácticos (difusión científica).
+Algunos ejemplos a destacar son \textit{SPICE} para la simulación de circuitos
+integrados, \textit{TeX} como sistema de tipografía electrónica y el complejo
+caso de \textit{Unix}, sistema operativo portable originalmente creado con Ken
+Thompson y Dennis Ritchie en los \textit{Bell Labs} de \textit{AT\&T}.
+
+Pero hasta el momento todo fueran iniciativas prácticamente individuales. No
+fue hasta comienzo de la década de 1980 cuando comenzaron a aparecer proyectos
+organizados y que de una manera consciente, buscaban sistemas compuestos
+únicamente por \textit{software} libre. Fue precisamente durante estos años
+cuando se asentaron las bases y fundamentos filosóficos y legales (a través de
+la licencia \textit{GPL}) del movimiento del \textit{software} libre. Richard
+Stallman al frente, como padre ideológico y cabeza visible del movimiento, dejó
+en 1984 su puesto de trabajo en el \textit{MIT} para comenzar a trabajar en el
+proyecto \textit{GNU}, con la idea de crear un sistema \textit{software} de
+propósito general y completamente libre. De hecho, aportó alguna infraestructura
+básica para continuar trabajando en el sistema, como fueron el editor de textos
+\textit{Emacs} y el importante compilador de \textit{C} llamado \textit{GCC}.
+
+Además, Richard Stallman también se encargó de escribir la licencia \textit{GPL}
+con la que se garantizaba que cualquier usuario, tras un número indefinido de
+redistribuciones, siguiese contando con las mismas libertades para modificar el
+\textit{software}, redistribuirlo, etc. Y del mismo modo, fundó la \textit{Free
+Software Foundation} con tal de conseguir fondos destinados al desarrollo y
+protección del \textit{software} libre, asentándose las bases del pensamiento y
+la ética en el \textit{The GNU Manifesto}.
+
+Por otro lado, alrededor de \textit{Unix} se creó una comunidad de
+desarrolladores que pronto tuvo como centro al \textit{CSRG} de la
+\textit{Universidad de California} en Berkeley, hasta el punto de llegar a
+convertirse en una de las dos fuentes principales de \textit{Unix}, junto con la
+oficial, \textit{AT\&T}. De hecho, tal fue el éxito del \textit{software}
+desarrollado en el \textit{CSRG} que tras liberaciones de su código del núcleo y
+todas las utilidades de un sistema \textit{Unix} completo, se daría origen
+primero al sistema \textit{386BSD} (Bill Jolizt escribío el código fuente del
+núcleo para que funcionase sobre \textit{i386}), y a partir de ahí nacería toda
+la familia \textit{*BSD} (\textit{NetBSD}, \textit{FreeBSD}, \textit{OpenBSD}),
+siempre distribuida bajo licencias tipo \textit{BSD} y que en muchas ocasiones
+fue y sigue siendo utilizado por software privativo: \textit{SunOS},
+\textit{Ultrix}, etc.
+
+Un hito importante en la historia temprana del \textit{software} libre lo supuso
+\textit{Internet}, desde su nacimiento a comienzos de la década de 1970 y con el
+que estableció una estrecha relación. Fue importante la distribución de una
+implementación libre de la pila \textit{TCP/IP} llevada a cabo por \textit{BSD
+Unix} y fue tomada como la de referencia. La red pronto se convirtió en una
+herramienta fundamental, al permitir la cooperación y compartir información y
+\textit{software} a través de las mismas y con independencia de la distancia
+existente entre los interesados. A todo esto pronto se añadieron nuevas
+herramientos que ayudaron aún más en la metodología de trabajo, como
+\textit{News}, \textit{FTP}, correo electrónico, etc. Y con todo ello,
+comenzaron a formarse comunidades alrededor de proyectos de \textit{software}
+libre tal y como hoy las conocemos.
+
+\subsection{Final de los 1980 y década de 1990}
+
+Hacia finales de los años 1980 ya se contaba con una gran cantidad de
+aplicaciones y herramientas necesarias en un sistema \textit{software}. De
+hecho, muchas de ellas se convirtieron rápidamente, dada su calidad, en las
+mejores de su campo, como era el caso del compilador \textit{GCC} o ciertas
+utilidades \textit{Unix}, además del interesante sistema \textit{X Window}.
+
+Durante estos años, nace el interesante caso de la ya comentada familia
+\textit{*BSD}, con los sistemas \textit{386BSD}, \textit{NetBSD},
+\textit{FreeBSD} y \textit{NetBSD}, nacidos en el \textit{CSRG} de la
+\textit{Universidad de California} en Berkeley. Se trata de sistemas formados
+completamente por \textit{software} libre, tras conseguir el último componente
+que faltaba para ser así. Concretamente se trataba del \textit{kernel} del
+sistema, que Bill Jolitz desarrolló para que funcionase sobre \textit{i386} y
+naciendo así el sistema \textit{386BSD} que daría origen al resto de la familia.
+Otra característica común a todos ellos es que se distribuyen bajo una licencia
+\textit{BSD} de tipo permisiva, por lo que puede ser utilizada para
+distribuición como \textit{software} propietario.
+
+Por su parte, al proyecto \textit{GNU} le seguí faltando también la misma pieza
+para conseguir el soñado sistema completamente libre: el \textit{kernel}. De
+hecho dentro del proyecto \textit{GNU} ya se contaba con un proyecto para
+solventar dicho espacio, conocido como el proyecto \textit{Hurd}. Pero la
+verdadera revolusión llegó cuando en 1991, un estudiante finlandés de 21 años
+llamado Linus Torvalds, anunció que estaba trabajando en un nuevo kernel
+inspirado en el sistema \textit{Minix} desarrollado por Andrew S. Tanenbaum y
+que gozaba de gran popularidad, siendo principalmente utilizado en entornos
+académicos con fines educativos. Desde ese mismo momento, centenares de
+desarrolladores se vuelcan en el trabajo sobre el nuevo kernel llamado
+\textit{Linux}, e integrándolo junto con el resto de herramientas del proyecto
+\textit{GNU}, así como creando otras nuevas. Además, resulta de especial
+importancia que este \textit{kernel} sea distribuido bajo una licencia
+\textit{GPL} (ahorrándose problemas que tuvieron los sistemas distribuidos bajo
+licencia \textit{BSD}), por lo que las redistribuciones del mismo deben hacerse
+con el código fuente. Queda configurado por tanto el sistema operativo
+completamente libre: \textit{GNU/Linux}. Su popularidad queda confirmada con la
+aparición de múltiples distribuciones diferentes pese a contar con un mismo
+\textit{kernel}, como son los famosos y pioneros casos de \textit{Slackware},
+\textit{Debian}, \textit{RedHat}, \textit{Suse}, y así sucediéndose unas
+distribuciones a otras hasta llegar a nuestros días con la conocidísima
+\textit{Ubuntu}.
+
+Hacia finales de la década de 1990 el \textit{software} libre ya ofrece sistemas
+completos tanto con \textit{GNU/Linux} como con \textit{*BSD}. Sin embargo,
+sigue habiendo ciertos déficits como por ejemplo los sistemas de ventanas para
+interfaces gráficas en un tiempo en el que \textit{Windows 95} arrasa en el
+mercado precisamente gracias a este factor, que hace que pueda llegar de una
+manera masiva a un público general gracias a su sencillo uso. Pero muy pronto
+llegarían iniciativas destinadas precisamente a solventar ese hueco dentro de
+los escritorios con los proyectos \textit{KDE} y \textit{GNOME}. Al mismo
+tiempo, \textit{GNU/Linux} se torna omnipresente en los entornos universitarios
+y comienza a llegar a las propias casas de los estudiantes. Por otro lado, el
+\textit{software} libre se sigue confirmando como la mejor opción en muchos
+ámbitos y sectores, como por ejemplo en el segmento de los servidores
+\textit{HTTP}, que siempre han liderado el mercado gracias a su calidad, como
+ocurre en el conocido caso de \textit{Apache}. Pero esto mismo aplica a muchos
+otros ámbitos, como por ejemplo en la propia estructura de \textit{Internet}, o
+en el mundo de los compiladores.
+
+Otro punto de especial importancia comienza a darse en el ámbito económico y
+empresarial, al mismo tiempo que en algunos casos también se capta la atención
+de la prensa. El caso de \textit{RedHat} se convierte en una buena muestra de
+que se puede crear negocio alredeor del \textit{software} libre, en su caso,
+comenzando con la venta de \textit{CDs} que incluían instalaciones de
+\textit{GNU/Linux} y diversificando el modelo con el tiempo. Las grandes
+empresas comienzan a ser conscientes de la importancia que el \textit{software}
+libre está cobrando, llegando en muchos casos a definir una política respecto al
+mismo, como ocurre en los casos de \textit{IBM}, \textit{Apple} o
+\textit{Corel}.
+
+\subsection{Década de 2000 y actualidad}
+
+Durante el comienzo de la década de los años 2000, se sigue produciendo un
+gran aumento del número de desarrolladores y de la cantidad de \textit{software}
+libre disponible, que comienza a estar listo para el escritorio gracias a los
+proyectos \textit{GNOME}, \textit{KDE}, y a la continua aparición de
+aplicaciones para usuarios medios, como por ejemplo \textit{suites} ofimáticas
+(\textit{OpenOffice}) y navegadores \textit{web} (\textit{Mozilla Firefox}, tras
+toda la evolución desde \textit{Netscape}), al mismo tiempo que las
+distribuciones se perfeccionan y comienzan a ofrecer una gran facilidad de
+instalación, hecho llevado a su extremo con \textit{Ubuntu}, aparecida en 2004,
+pensada y dirigida especialmente para usuarios medios sin conocimientos
+técnicos.
+
+Del mismo modo, definitivamente las grandes empresas tienen en cuenta el
+movimiento del \textit{software} libre. En unos casos lo incorporan a sus
+estrategias de mercado, como ocurre en los casos de \textit{IBM}, \textit{Sun} o
+\textit{HP}, y en otros, muestran su rechazo al mismo produciéndose cierto
+enfrentamiento y criticando particularmente al software libre distribuido bajo
+licencia \textit{GPL}. Además, en medio de las dificultades financiera debidas a
+la crisis de las \textit{puntocom}, el \textit{software} libre comienza a
+penetrar también en las administraciones públicas, hasta el punto de que la
+distribución \textit{gnuLinEx} adoptada en 2002 por la \textit{Junta de
+Extremadura} se convierte en portada del \textit{Washington Post}, siendo una de
+las primeras ocasiones en las que el \textit{software} libre aparece en portada
+de un periódico importante.
+
+Es durante estos años cuando se comienza a estudiar el fenómeno del
+\textit{software} libre con tal de comprender el movimiento y su funcionamiento
+un poco mejor. También se hace palpable el efecto de la deslocalización, por el
+cual, países considerados como periféricos aumentan su contribución y de manera
+muy interesante al \textit{software} libre. Pero al mismo tiempo, se produce una
+gran actividad en el ámbito legal. En este caso cuenta con una especial
+relevancia el caso \textit{SCO}, al imponer a principios de 2003 una demanda a
+\textit{IBM} por supuesta infracción de propiedad intelectual. El entorno legal
+empieza a cambiar y sólo el tiempo dictará si será en forma de impedimento y
+barrera para el \textit{software} libre.
+
+Con el paso del tiempo, el \textit{software} libre se convierte cada vez de una
+forma más acelerada en una opción para la estrategia de mercado de empresas tan
+natural como lo pueda ser cualquier otra. El ejemplo más claro de esto lo
+protagoniza de una manera evidente \textit{Google}, empleando el
+\textit{software} libre como estrategia para entrar en un determinado mercado y
+llegar a dominarlo (casos de \textit{Android}, \textit{Symbian}, \textit{Meego},
+etc.). De este modo, se producen dos hitos fundamentales y de gran importancia
+para la situación actual. Por un lado, el caso de \textit{Ubuntu}, distribución
+destinada a usuarios medios y que comienza a ser empleada de una manera casi sin
+precedentes en entornos de escritorio, y el caso de \textit{Android}, haciendo
+que el \textit{software} libre dé el salto a nuevas áreas y tecnologías, como es
+en este caso el mercado de la telefonía móvil y los \textit{smartphones},
+cosechando igualmente un gran éxito y penetración entre la población.
+
+\subsection{Futuro}
+
+Pese a la dificultad de predecir lo que ocurrirá en un futuro, sí parece claro
+que el \textit{software} libre deberá hacer frente a una serie de problemas a
+los que de hecho se lleva enfrentando desde hace años:
+
+\begin{itemize}
+  \item Técnica \textit{FUD} (fear, uncertainity, doubt), consistente en crear
+miedo, servirse del desconocimiento o sembrar dudas en torno a este modelo. Sin
+embargo, a medida que el \textit{software} libre evoluciona, se muestra cada vez
+más inmune a estas técnicas.
+  \item Disolución, consistente en poner a prueba los límites del
+\textit{software} libre, hasta el punto de ofrecer modelos que presentan
+características muy similares a las del mismo, con la consecuente creación de
+confusión, estudio de si realmente se trata de \textit{software} libre con las
+consecuencias de ello, etc.
+  \item Desconocimiento, ya que no es extraño, y especialmente en los últimos
+tiempos, encontrar personas que llegan al mundo del \textit{software} libre por
+moda, o engañados por la falsa idea de asociar \textit{software} libre con
+\textit{software} gratis. El principal problema aquí es la insatisfacción que se
+puede producir al desconocer las ventajas que ofrece el modelo y la consecuente
+explotación de las mismas.
+  \item Impedimentos legales, que parecen ser los mayores problemas de cara al
+futuro, con las nuevas legislaciones sobre derechos de autor, patentes en el
+mundo del \textit{software} y que en definitiva, suponen barreras para la
+entrada del \textit{software} libre en determinados nichos de mercado.
+\end{itemize}
+
+\section{La Definición de \textit{Open Source}}
+
+\subsection{Motivación}
+\label{SUBSEC:DefinicionMotivacion}
+
+Existe un motivo fundamental para definir aquello de lo que estamos hablando:
+evitar confusiones. Por ello, en esta sección estableceremos a qué nos estamos
+refiriendo al hacer mención de aspectos como \textit{Free Software},
+\textit{Open Source} o \textit{Software Libre}.
+
+Para ello, debemos recurrir en primera instancia a Richard Stallman y la
+\textit{Free Software Definition}\footnote{
+http://www.gnu.org/philosophy/free-sw.html }, cuya lectura detenida queda
+totalmente recomendada. En esta definición, se establecen las cuatro libertades
+que debe ofrecer un \textit{software} para que pueda ser considerado como libre,
+y que se detallan a continuación:
+
+\begin{enumerate}
+  \setcounter{enumi}{-1}
+  \item La libertad de ejecutar el programa para cualquier propósito. De lo
+cual se desprende que no se debería prohibir el uso del programa, por ejemplo,
+con fines militares, si bien es cierto que esto no ampara los posibles usos para
+fines ilegales.
+  \item La libertad para estudiar cómo funciona el programa y modificarlo como
+se desee. De esto se desprende lo que se podría considerar como un corolario:
+es necesario tener acceso al código fuente.
+  \item La libertad para redistribuir copias ya que con ello, puedes ayudar a
+tu vecino. La manera de redactar esta libertad en concreto, deja entrever la
+filosofía de vida y pensamiento de Richard Stallman.
+  \item La libertad para redistribuir copias del \textit{software} una vez
+modificado. Se puede entender como una combinación de las dos libertades
+anteriores.
+\end{enumerate}
+
+Como análisis de estas libertades, se puede afirmar que Richard Stallman en el
+momento de su definición, estaba poniendo el énfasis en la idea de la libertad
+(en el sentido de la libertad de expresión). De hecho, en ningún momento se
+recogen menciones al ámbito comercial y/o económico, ya que para tener libertad
+de expresión no es necesario pagar (obsérvese la desambiguación del término
+inglés \textit{``free''}, indicándose que debe entenderse en el sentido de
+\textit{``free speech''} y nunca en el sentido de \textit{``free beer''}, por lo
+que igualmente se hace énfasis de una manera indirecta en que por el hecho de
+ser libre, el \textit{software} no tiene por qué ser gratuito).
+
+En cualquier caso, la \textit{Free Software Definition} es tan sólo una
+definición que nos ayuda a identificar y concretar a qué nos referimos al
+emplear el término \textit{Free Software}. Pero a la hora de materializar este
+concepto en la práctica, ¿cómo ha de hacerse? Debido a la propiedad intelectual
+y sus mecanismos, si no se da permiso explícito, esa obra pertenece a su creador
+y nadie más puede hacer uso de ella.
+
+De aquí nace la necesidad de contar con el concepto de licencia, mecanismo
+empleado para indicar al usuario qué puede hacer y qué no con ese
+\textit{software}, y que se estudiará en detalle en el capítulo
+\ref{CHAP2:LegalAspects} de este documento. De este modo, será necesario
+leer la licencia de ese \textit{software} y en caso de cumplirse con las cuatro
+libertades indicadas anteriormente, nos encontraremos ante un \textit{software}
+libre. De lo contrario (bastará con que no se cumpla tan sólo una de las cuatro
+libertades) estaremos ante un \textit{software} privativo o \textit{software}
+propietario (estos dos últimos términos se emplean como sinónimos, pese a que lo
+correcto es el término privativo, ya que por el hecho de hacer que un
+\textit{software} sea libre, no se pierde la autoría desde el punto de vista
+legal, se continúa siendo el propietario de cara a la ley).
+
+En cualquier caso, resulta indudable que la lectura y análisis de una licencia
+\textit{software} es un trabajo tedioso. Por ello, es preferible contar con un
+listado de licencias asimiladas y reconocidas como de \textit{software} libre.
+Además, este listado de licencias deberá ser emitido por una entidad de
+reconocido prestigio en la materia.
+
+Retomando la definición ofrecida por la \textit{Free Software Foundation}, debe
+notarse que se trata de un lenguaje abstracto y de altísimo nivel, mientras que
+una licencia emplea un lenguaje muy concreto de lo que se puede y lo que no se
+puede hacer. Este fue el motivo por el que nacieron las \textit{Debian Free
+Software Guidelines}\footnote{
+http:\/\/www.debian.org\/social\_contract\#guidelines } (lectura totalmente
+recomendada): dado que la definición original es de muy alto nivel, se deben
+establecer reglas más detalladas, de tal modo que se pase de hablar de aspectos
+como la libertad de expresión, a cosas mucho más concretas.
+
+Este trabajo llevado a cabo por \textit{Debian} tuvo gran éxito y buena acogida,
+y por ello fue tomado como base para otras definiciones, como es el caso de
+la \textit{Open Source Definition}. Pero, ¿por qué es necesaria una nueva
+definición para una misma cosa? La razón de esto se encuentra en que pese a
+todas las matizaciones e indicaciones, \textit{Free Software} puede referirse en
+inglés tanto a \textit{``libre''} como a \textit{``gratis''}. Por ello comenzó
+también a emplearse el término \textit{Open Source}, dándose origen a la
+\textit{Open Source Definition}, que vamos a estudiar en detalle a continuación.
+
+\subsection{\textit{The Open Source Definition (Annotated)}}
+
+Tomando como base las \textit{Debian Free Software Guidelines}, y con tal de
+desambiguar el término \textit{``free''} en inglés (contando con la polisemia
+\textit{``gratis''} y \textit{``libre''}), nació la \textit{Open Source
+Initiative} (en un primer momento, intentando incluso la creación de
+\textit{Open source} como marca comercial, cosa que no se consiguió debido a que
+se trataba de un término demasiado genérico) con su \textit{Open Source
+Definition}\footnote{ http://www.opensource.org/docs/definition.php } que será
+analizada durante esta sección, y que comienza de la siguiente
+manera:\vspace{0.4cm}
+
+{\bf Introduction
+
+Open source doesn't just mean access to the source code. The distribution terms
+of open-source software must comply with the following criteria:}\vspace{0.4cm}
+
+Aquí se aclara que para que un \textit{software} se pueda considerar como
+\textit{Open source}, no se debe cumplir únicamente con que se tenga acceso a su
+código fuente (hecho que por otro lado, también genera ciertas confusiones en la
+actualidad pese a la clara matización que se ofrece).\vspace{0.4cm}
+
+{\bf 1. Free Redistribution
+
+The license shall not restrict any party from selling or giving away the
+software as a component of an aggregate software distribution containing
+programs from several different sources. The license shall not require a royalty
+or other fee for such sale.}
+
+\textit{Rationale: By constraining the license to require free redistribution,
+we eliminate the temptation to throw away many long-term gains in order to make
+a few short-term sales dollars. If we didn't do this, there would be lots
+of pressure for cooperators to defect.}\vspace{0.4cm}
+
+Como se puede observar en este primer punto, y al contrario de lo que ocurría
+con la \textit{Free Software Definition}, en esta definición se comienza a hilar
+muy fino y tratando temas muy concretos. Este punto en concreto trata sobre
+el hecho de que la licencia no debe restringir la distribución de un
+\textit{software} como parte de una distribución de software agregado o global,
+conteniendo programas de diferentes fuentes, al mismo tiempo que el creador
+original tenga el derecho a exigir \textit{royalties}, como por ejemplo una
+determinada cantidad económica por cada descarga, etc.\vspace{0.4cm}
+
+{\bf 2. Source Code
+
+The program must include source code, and must allow distribution in source code
+as well as compiled form. Where some form of a product is not distributed with
+source code, there must be a well-publicized means of obtaining the source code
+for no more than a reasonable reproduction cost preferably, downloading via the
+Internet without charge. The source code must be the preferred form in which a
+programmer would modify the program. Deliberately obfuscated source code is not
+allowed. Intermediate forms such as the output of a preprocessor or translator
+are not allowed.}
+
+\textit{Rationale: We require access to un-obfuscated source code because you
+can't evolve programs without modifying them. Since our purpose is to make
+evolution easy, we require that modification be made easy.}\vspace{0.4cm}
+
+En este segundo punto se indica que será necesario incluir el código fuente en
+la distribución del \textit{software}, y en caso de que no sea así, se debe
+informar claramente de las diferentes maneras existentes para obtenerlo, nunca
+por más de un precio razonable en concepto del coste de reproducción, o a través
+de \textit{Internet} sin coste adicional. Otro aspecto a destacar en este punto
+sobre referencias a aspectos concretos, es la referencia a que el código fuente
+no se debe ofuscar de manera deliberada (cambiar los nombres de las variables
+por otros nombres aleatorios, eliminar espacios y tabuladores alineando el
+código fuente en una única línea de código, etc.) con tal de que la legibilidad
+del código se mantenga para facilitar el estudio del mismo, etc.\vspace{0.4cm}
+
+{\bf 3. Derived Works
+
+The license must allow modifications and derived works, and must allow them to
+be distributed under the same terms as the license of the original software.}
+
+\textit{Rationale: The mere ability to read source isn't enough to support
+independent peer review and rapid evolutionary selection. For rapid evolution to
+happen, people need to be able to experiment with and redistribute
+modifications.}\vspace{0.4cm}
+
+La licencia debe permitir modificaciones y obras derivadas, y debe permitir su
+redistribución bajo las mismas condiciones. Aquí se encuentra un matiz
+importante, ya que recurriendo a aspectos de propiedad intelectual, se podría
+``obligar a'', mientras que se prefiere utilizar ``te permito
+hacerlo''. De hecho, cabe comentar la existencia de licencias de
+\textit{Software Libre} que no obligan a mantener la misma licencia, de modo que
+se pueden generar obras derivadas privativas, tal y como ocurre en el caso de
+las licencias tipo \textit{Apache}.\vspace{0.4cm}
+
+{\bf 4. Integrity of The Author's Source Code
+
+The license may restrict source-code from being distributed in modified form
+only if the license allows the distribution of ``patch files'' with the source
+code for the purpose of modifying the program at build time. The license must
+explicitly permit distribution of software built from modified source code. The
+license may require derived works to carry a different name or version number
+from the original software.}
+
+\textit{Rationale: Encouraging lots of improvement is a good thing, but users
+have a right to know who is responsible for the software they are using. Authors
+and maintainers have reciprocal right to know what they're being asked to
+support and protect their reputations.\newline Accordingly, an open-source
+license must guarantee that source be readily available, but may require that it
+be distributed as pristine base sources plus patches. In this way,
+``unofficial'' changes can be made available but readily distinguished from the
+base source.}\vspace{0.4cm}
+
+Se permite la distribución y modificación del \textit{software}, pero de tal
+modo que la obra original quede íntegra, mientras que las modificaciones se
+realicen a modo de parches, pudiéndose realizar obras derivadas, pero no como la
+obra original (caso de \textit{Apache}, y sus modificaciones como pueda ser el
+ejemplo de \textit{Cherokee}). Este aspecto hace referencia a la práctica es
+habitual consistente en el envío de parches al autor original para que los
+incluya con tal de no tener que volver a aplicarlos con nada nueva
+\textit{release} de dicho \textit{software}.\vspace{0.4cm}
+
+{\bf 5. No Discrimination Against Persons or Groups
+
+The license must not discriminate against any person or group of persons.}
+
+\textit{Rationale: In order to get the maximum benefit from the process, the
+maximum diversity of persons and groups should be equally eligible to contribute
+to open sources. Therefore we forbid any open-source license from locking
+anybody out of the process.\newline Some countries, including the United States,
+have export restrictions for certain types of software. An OSD-conformant
+license may warn licensees of applicable restrictions and remind them that they
+are obliged to obey the law; however, it may not incorporate such restrictions
+itself.}\vspace{0.4cm}
+
+Este punto (así como el punto siguiente) hace referencia a la libertad 0
+indicada por la \textit{Free Software Definition}, de tal modo que no se debe
+discriminar a ninguna persona bajo ningún criterio (sexo, religión, raza,
+nacionalidad, ideología política, etc.). Pero en cualquier caso, el hecho de que
+el \textit{software} sea libre, no quiere decir que tus actos con el mismo sean
+legales, como pueda ser la exportación de armas, etc.\vspace{0.4cm}
+
+{\bf 6. No Discrimination Against Fields of Endeavor
+
+The license must not restrict anyone from making use of the program in a
+specific field of endeavor. For example, it may not restrict the program from
+being used in a business, or from being used for genetic research.}
+
+\textit{Rationale: The major intention of this clause is to prohibit license
+traps that prevent open source from being used commercially. We want commercial
+users to join our community, not feel excluded from it.}\vspace{0.4cm}
+
+Haciendo referencia también a la libertad 0, la licencia no debe restringir el
+uso del programa en un determinado campo de actividad.\vspace{0.4cm}
+
+{\bf 7. Distribution of License
+
+The rights attached to the program must apply to all to whom the program is
+redistributed without the need for execution of an additional license by those
+parties.}
+
+\textit{Rationale: This clause is intended to forbid closing up software by
+indirect means such as requiring a non-disclosure agreement.}\vspace{0.4cm}
+
+En este punto, lo importante es que no se pueden incluir condiciones adicionales
+que puedan restringir las libertades del \textit{software}.\vspace{0.4cm}
+
+{\bf 8. License Must Not Be Specific to a Product
+
+The rights attached to the program must not depend on the program's being part
+of a particular software distribution. If the program is extracted from that
+distribution and used or distributed within the terms of the program's license,
+all parties to whom the program is redistributed should have the same rights as
+those that are granted in conjunction with the original software distribution.}
+
+\textit{Rationale: This clause forecloses yet another class of license
+traps.}\vspace{0.4cm}
+
+En este punto se indica que no se puede permitir la distribución como
+\textit{software libre} para un determinado producto, pero no para otros (por
+ejemplo, no se puede indicar que un \textit{software} se puede distribuir como
+libre bajo una distribución \textit{Debian}, pero no bajo una distribución
+\textit{Red Hat}). Es decir, no se pueden producir acuerdos específicos, sino
+que las reglas deben ser las mismas para todos.\vspace{0.4cm}
+
+{\bf 9. License Must Not Restrict Other Software
+
+The license must not place restrictions on other software that is distributed
+along with the licensed software. For example, the license must not insist that
+all other programs distributed on the same medium must be open-source software.}
+
+\textit{Rationale: Distributors of open-source software have the right to make
+their own choices about their own software.\newline Yes, the GPL v2 and v3 are
+conformant with this requirement. Software linked with GPLed libraries only
+inherits the GPL if it forms a single work, not any software with which they are
+merely distributed.}\vspace{0.4cm}
+
+Para entender esta regla en su integridad, será necesario el estudio de la
+licencia \textit{GPL} en el capítulo \ref{CHAP2:LegalAspects}.\vspace{0.4cm}
+
+{\bf 10. License Must Be Technology-Neutral
+
+No provision of the license may be predicated on any individual technology or
+style of interface.}
+
+\textit{Rationale: This provision is aimed specifically at licenses which
+require an explicit gesture of assent in order to establish a contract between
+licensor and licensee. Provisions mandating so-called ``click-wrap'' may
+conflict with important methods of software distribution such as FTP download,
+CD-ROM anthologies, and web mirroring; such provisions may also hinder code
+re-use. Conformant licenses must allow for the possibility that (a)
+redistribution of the software will take place over non-Web channels that do not
+support click-wrapping of the download, and that (b) the covered code (or
+re-used portions of covered code) may run in a non-GUI environment that cannot
+support popup dialogues.}\vspace{0.4cm}
+
+Se trata de otro punto peculiar dentro de la definición, según el cual, la
+licencia no debe presuponer ninguna tecnología, cosa que se entiende
+fácilmente en los dispositivos empotrados (lavadora, TDT, etc.), ya que
+normalmente no se dispondrá de una interfaz adecuada (\textit{display}, botón de
+\textit{OK} o aceptar, etc.) como para visualizar los términos de la licencia
+del \textit{software} para aceptarlos o rechazarlos.
+
+\subsection{Comparación de Diferentes Definiciones}
+
+Llegados a este punto, debemos realizarnos la siguiente pregunta: ¿en qué se
+diferencian las diversas definiciones de \textit{software libre}? Durante esta
+sección, intentaremos responder a la pregunta.
+
+Las diferencias no van más allá de un mero aspecto filosófico. Así, \textit{Free
+Software} es el término empleado por aquellos que tratan sobre la parte más
+política y cercana a los aspectos de libertad de expresión, mientras que el
+término \textit{Open Source} se ha popularizado en los círculos de ámbito
+comercial, quedando quizás más próximo a los aspectos puramente pragmáticos del
+\textit{software libre}.
+
+Sin embargo, \textit{Free Software} y \textit{Open Source} no son más que
+maneras diferentes de referirse a una misma cosa, hasta el punto de que
+prácticamente las podemos usar como sinónimos. De hecho, personas con diferentes
+maneras de pensar, \textit{a priori}, respecto a un mismo tema, materializan sus
+ideas en la práctica de una misma forma: las licencias de \textit{software
+libre}. La mejor prueba para demostrar la equivalencia entre los términos es
+que las listas de licencias aceptadas como de \textit{software libre} ofrecidas
+por unas y otras instituciones son prácticamente exactas salvo en casos muy
+puntuales. Precisamente esas excepciones, se deben a las diferentes maneras
+posibles de interpretar una misma cosa, pero siendo siempre coincidentes en la
+esencia.
+
+En definitiva y a modo de conclusión, debemos tener en cuenta que \textit{Free
+Software} y \textit{Open Source} no son dos cosas diferentes. De la misma manera
+que tampoco lo son los términos \textit{Libre Software} (nacido igualmente para
+evitar la confusión a la que puede llevar el término \textit{``free''} del
+inglés, de modo que se adoptó la palabra del español) y el más reciente
+\textit{FLOSS} (\textit{Free, Libre Open Source Software}) nacido como una
+manera de unificar criterios con tal de dar origen a un término único como
+forma de referirse y denotar al mundo del \textit{software libre}.

@@ -1,7 +1,9 @@
+%
 % Capítulo incluido en los Apuntes Colaborativos realizados por los
 % alumnos de Software Libre en el Máster Universitario Oficial en
 % Sistemas Telemáticos e Informáticos (Universidad Rey Juan Carlos),
 % durante el curso 2010/11.
+%
 
 \chapter{Aspectos Legales}
 \label{CHAP2:LegalAspects}
@@ -195,6 +197,10 @@ tiene unas características que le hacen muy diferente del resto de
 obras existentes hasta la fecha.
 
 \section{Licencias}
+
+% Sólo se listan las licencias que vimos en clase. Se podría completar
+% con muchas más.
+
 Si navegando por \emph{la Red} descubrimos un software sin licencia,
 \emph{¿qué podríamos hacer con él?} Acabamos de ver en
 \ref{sub:que_pasa} que lo que aplicamos al software son los
@@ -235,13 +241,13 @@ autor si fuese posible.
 Licenciar software con una licencia libre básica es sencillo. Tan sólo
 debemos incluir las siguiente líneas al principio de los ficheros
 fuente del programa:
-\begin{quotation}
+\begin{verbatim}
 Copyright (c) 2010 Foobar Developers. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the redistributions of
 source code must retain the above copyright notice.
-\end{quotation}
+\end{verbatim}
 Con la primera línea se está ``marcando el terreno''. En ella se puede
 apreciar el año de creación, el nombre del programa y el nombre de los
 autores. La segunda parte del texto es la que otorga al usuario final
@@ -284,19 +290,123 @@ encontrar en un software de dominio~público.
 
 \subsection{Licencias Permisivas}
 
-% FIXME: Verificar el siguiente párrafo, ¡es una deducción personal!
-% En las transparencias de licencias vistas en clase se diferencian
-% licencias académicas de licencias permisivas. Sin embargo, en el
-% libro de la asignatura se muestran como un solo conjunto.  
+Las licencias permisivas son aquellas que no imponen ninguna
+restricción en la segunda redistribución. Las licencias académicas que
+veíamos en el punto anterior también corresponden a esta familia. No
+obstante se suele hacer esta distinción para diferenciar las licencias
+académicas, viejas y cortas, con las licencias permisivas actuales,
+más modernas y más largas, pero herederas naturales de la BSD.
 
-Las licencias permisivas son muy similares a las licencias académicas,
-hasta tal punto que podríamos ver a estas últimas como un subconjunto
-de esta nueva familia.
+\begin{description}
+  \item[Licencia Apache] Las licencias académicas eran muy buenas para
+    aplicarlas en estándares como TCP. No obstante los desarrolladores
+    del proyecto Apache detectaron que esa licencia no se acoplaba
+    demasiado bien a su trabajo. El problema residía en que terceras
+    partes podrían ensuciar su nombre, al realizar ``malas'' obras
+    derivadas. Apache quería una licencia que otorgase libertad a los
+    demás sin nombrar su proyecto como autor. \emph{Haz con Apache lo
+      que quieras, pero no digas que es de Apache}. Así la Apache
+    Software Foundation (ASF) crea la licencia Apache, aprobada como
+    libre por la FSF y por la OSI. Es muy similar a la BSD sólo que
+    añade alguna restricción, como la de autoría. Hay numerosos
+    proyectos que utilizan esta licencia, donde podemos encontrar el
+    25\% del código de Google.
+\end{description}
+
+Hay muchas otras licencias permisivas con principios muy similares a
+la licencia Apache. Destacan la X11 y la Zope.
 
 \subsection{Licencias Copyleft}
 
+Esta familia de licencias, también conocidas como licencias robustas,
+son las que imponen condiciones sobre la segunda redistribución. Esa
+imposición suele requerir que se mantenga la misma licencia. Hay un
+gran debate por si esta técnica fomenta la libertad, por estar
+obligando a que las obras derivadas también sean libres, o si la
+coarta, al imponer restricciones a terceras partes.
+
 \subsubsection{Copyleft débil}
+
+Son aquellas licencias que permiten la coexistencia con obras
+privativas\footnote{Hay que tener en cuenta que cuando hablamos de
+  coexistencia lo hacemos en términos de redistribución. Cualquiera
+  podría juntar en una máquina software privado con software libre
+  copyleft. Por poner un ejemplo, puedes instalar Emacs en
+  Windows.}. No obstante, el software licenciado con copyleft débil,
+debe modificarse bajo la misma licencia.
+
+\begin{description}
+\item[LGPL] Permite la coexistencia con ficheros que tengan otra
+  licencia. En sus inicios fue pensada para bibliotecas, con el fin de
+  fomentar algunas librerías GNU sin oponer tantas restricciones como
+  la GPL, que veremos más adelante. A día de hoy la FSF ---con fuerte
+  predilección por las licencias copyleft fuerte--- recomienda no
+  utilizarla, por la ventaja que se otorga al sector de desarrollo
+  privativo. Les permite lucrarse con bibliotecas libres para trabajos
+  cuyo código no verá la luz.
+\item[Mozilla Public License] Muy similar a la LGPL aunque
+  incompatible con la GPL. Esto ha derivado en que Firefox, que usaba
+  esta licencia originariamente, haya tenido que liberarse
+  simultáneamente bajo diversas licencias, entre ellas la GPL.
+\end{description}
 
 \subsubsection{Copyleft fuerte}
 
+No se permite la coexistencia con ficheros privativos. Al ser copyleft
+obliga a que las obras derivadas mantengan la misma licencia. Con esto
+se promueve el desarrollo de Software Libre.
 
+\begin{description}
+\item[GPL] La GNU General Public License es sin duda la licencia libre
+  más popular. El concepto copyleft nace con ella. Aprovecha el
+  copyright para otorgar las libertades básicas y sin ella, lo que
+  conocemos hoy día como Software Libre sería una utopía. Supone el
+  mecanismo que lo hace realidad. Tiene 3 versiones. La última de
+  ellas contempla nuevas claúsulas adaptadas a la tecnología
+  actual. Por ejemplo, evita el problema que existía con TiBO, un
+  dispositivo sobre el que corría software libre. El hardware
+  rechazaba cualquier modificación en el código, ya que tenía escrita
+  la firma original del mismo a fuego. Elimina alguna restricción
+  sobre la GPL2, que permite la compatibilidad con licencias como
+  Apache2. Recoge también alguna claúsula referente a las patentes. Si
+  alguien, autor de una patente, decide utilizarla en un programa
+  libre, debe otorgar un permiso de uso a cualquier persona interesada
+  en modificar la nueva obra.
+\item[GPL Affero] Es una variante de la GPL para el problema surgido
+  con \emph{la nube}. Si alguien se instala un programa con licencia
+  GPL es libre de hacer lo que quiera con él en su máquina local, sin
+  necesidad de compartir el código fuente, ya que no lo está
+  distribuyendo. Pero, \emph{¿qué pasa si ese software es un Gestor de
+    Contenidos (CMS) o un Servicio Web al que se le han aplicado unas
+    modificaciones? ¿Ofrecer dichos servicios supone una
+    redistribución?}  En principio la respuesta es que no. Por ello,
+  surge la licencia Affero, para obligar a compartir el código fuente
+  con las modificaciones en casos especiales como este. Servicios como
+  Meneamé están bajo esta licencia.
+\end{description}
+
+\subsection{Notas finales}
+
+La existencia de múltiples licencias no es algo positivo. Comprender
+las implicaciones de cada una resulta complicado. Por ello, es muy
+recomendable utilizar las más representativas con el objetivo de no
+confundir a los usuarios finales. Las licencias que se han recogido en
+las secciones anteriores están muy extendidas y por tanto son
+adecuadas.
+
+Elegir la licencia que más convenga a un proyecto es muy
+complicado. Si MySQL hubiera utilizado Apache en vez de GPL, no
+hubiese alcanzado los grandes ingresos que obtuvo al ser
+vendida. Equivocarse de licencia también puede llevar a la ruina.
+
+Otro aspecto que se debe de tener muy en cuenta es la compatibilidad
+entre licencias. Haciendo una analogía con el mundo real, podemos
+encontrar dos chicos que desean montar una fiesta en casa. Uno de
+ellos es más permisivo y el otro pondrá muchas pegas a lo que se puede
+o no hacer en la casa. Evidentemente, el liberal tendrá que ceder ante
+las exigencias de su compañero. En el mundo de las licencias de
+software libre, el compañero restrictivo será sin duda alguna el que
+represente a la GPL. Utilizar esta licencia implica que las obras
+derivadas sean siempre GPL. Esto genera cierta controversia entre los
+desarrolladores de software libre. \emph{¿Es más libre la total
+  libertad u obligar a que todo sea siempre libre?}

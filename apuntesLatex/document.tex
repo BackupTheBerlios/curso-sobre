@@ -1,6 +1,6 @@
 % Definimos el estilo del documento
 \documentclass[oneside,12pt,a4paper,spanish]{book}
-% Utilizamos el paquete para utilizar español
+% Utilizamos el paquete para utilizar espaÃ±ol
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 % Utilizamos el paquete para gestionar acentos
@@ -33,6 +33,12 @@
 \begin{document}
 % Definimos titulo, autor, fecha, generamos titulo e indice de contenidos 
 \include{portada}
+
+% License
+\thispagestyle{empty}
+\input{license_header}
+\newpage
+\thispagestyle{empty} \cleardoublepage
 
 %Indice
 \tableofcontents

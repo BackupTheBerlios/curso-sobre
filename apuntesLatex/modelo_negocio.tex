@@ -61,20 +61,36 @@ la inversión en tecnologías sanitarias para un hospital público.
 % </+>
 
 Las motivaciones para la financiación de este tipo de proyectos son variadas,
-como científicas, promocionales, sociales o políticas.
+como científicas, precompetitivas, promocionales, sociales o políticas.
 % <+> 
 En las científicas podemos encontrar, por ejemplo, estudios en
 biotecnología, donde los resultados pueden ser reutilizados por otras
-entidades. Las promocionales se basan generalmente en extender un
-estándar, donde el ejemplo más ilustre es el de Internet. Gracias a
-los reducidos costes que suponía implantar TCP, fueron muchos los
-fabricantes que se lanzaron a incluirlo en sus productos. En cuanto a
-la motivación social, se hace presente en ciertas ocasiones cuando
-sale más rentable crear un producto desde cero y publicarlo como
-Software Libre que financiar otro producto de pago ya existente. Un
+entidades. En cuanto a las precompetitivas, se busca que todo el tejido
+industrial se pueda beneficiar de esos resultados precompetitivos, siendo el
+software libre en este caso, tal y como se ha podido comprobar, un claro
+vehículo para conseguirlo, ya que al finalizar la producción de ese software,
+se libera (téngase en cuenta que se subvenciona el software no sólo para su
+producción sino para su posterior liberación) quedando a disposición de
+todos, incluso para aquellos que no pertenecen al consorcio del proyecto. Las
+promocionales se basan generalmente en extender un estándar, donde el ejemplo
+más ilustre es el de Internet. Gracias a los reducidos costes que suponía
+implantar TCP, fueron muchos los fabricantes que se lanzaron a incluirlo en sus
+productos. En cuanto a la motivación social, se hace presente en ciertas
+ocasiones cuando sale más rentable crear un producto desde cero y publicarlo
+como Software Libre que financiar otro producto de pago ya existente. Un
 ejemplo de esto sería imaginar una sociedad en la que no existiesen
 navegadores web gratuítos.
 % </+>
+
+Un caso de estudio importante en esta sección es el del compilador de lenguaje
+Ada llamado GNAT. Su principal objetivo era conseguir un compilador muy barato,
+pero su calidad y éxito fue tal que llegó a expulsar del mercado a otros
+compiladores de Ada privativos. La clave de su éxito (y de su coste
+reducido) se encontró en que no se realizó un desarrollo del mismo desde cero,
+sino que se reutilizaron otros programas de software libre como el compilador
+de C, GCC. En definitiva, el esfuerzo se centró en la creación del front-end
+para la sintaxis del lenguaje, dado que el resto de componentes ya estaban
+hechos.
 
 Dentro de la financiación externa, existen algunas variantes de las cuales
 hablaremos a continuación.
@@ -200,8 +216,13 @@ pagando un precio razonable a modo de donación).
 Con la autofinanciación soy yo el que invierte en el desarrollo y luego
 trato de recuperarlo de alguna manera.
 
-Existen varias formas de enfocar la autofinanciación y las veremos en este
-apartado.
+Estos casos se darían cuando por ejemplo, una empresa quisiera iniciar un
+proyecto libre destinado a un determinado nicho de mercado en el que ve
+posibilidades de negocio futuro y por tanto, con la idea de rentabilizar a
+posteriori esa inversión inicial.
+
+Como se puede entender, mediante este tipo de financiación se pueden originar
+diversos modelos de negocio que veremos en este apartado.
 
 \subsection{Mejor conocimiento}
 
@@ -270,7 +291,13 @@ Ser la fuente de un programa. Es la idea de tener una marca y ser el punto de
 referencia sobre un producto. Es más terminos de imagen, como Sun con OpenOffice.
 
 Otro ejemplo claro es IBM que financia Eclipse y esto da una sensación de que
-IBM hace cosas serias.
+IBM hace cosas serias. Presumiblemente, este sería el mismo caso de Sun
+Microsystems con OpenOffice, es decir, la búsqueda de una buena imagen de
+marca, y más teniendo en cuenta que no está del todo claro que Sun llegase
+nunca a tener ingresos directos en concepto de OpenOffice. Además, se debe
+tener en cuenta que apadrinar un producto como Eclipse en el caso de IBM, a
+veces puede resultar menos costoso que el hecho de obtener publicidad mediante
+vías más tradicionales.
 
 Finalmente la financiación se termina rentabilizando en términos de imagen de
 marca.
@@ -286,7 +313,7 @@ posición dentro del mercado.
 \item Zope, tenía un producto privativo, cuando fueron a pedir financiación, la
 empresa les dijo que sólo les financiaba si lo hacían libre, de esta manera se
 ha creado una gran comunidad alrededor de Zope.
-\item Por último, el caso de Asterix, que se espera que sea el centro para la
+\item Por último, el caso de Asterisk, que se espera que sea el centro para la
 gestión de centralitas para su uso en VoIP.
 \end{itemize}
 
@@ -362,3 +389,57 @@ algunos otros de los estudiados con detenimiento a lo largo del capítulo.
   \centerline{\resizebox{\textwidth}{!}{\includegraphics{img/hecker}}}
   \label{IMG:Hecker}
 \end{figure}
+
+\section{Otros modos de financiación}
+
+Existen otros modos de financiación cuya cabida dentro de alguna de las
+categorías estudiadas en las clasificaciones anteriores resulta complicada.
+Algunas de ellas pueden ser:
+
+\begin{itemize}
+  \item Mediante sitios en los que se ponen en contacto desarrolladores y
+clientes, de tal modo que un desarrollador indica su perfil y habilidades,
+mientras que los clientes publican sus necesidades, de tal modo que puedan
+llegar a un acuerdo contractual para el producto. Un claro ejemplo de este
+modelo se ejemplifica a través de SourceXchange.
+  \item Mediante venta de bonos que cotizasen al estilo de una bolsa o mercado
+de bonos. El funcionamiento simplificado de una de sus variantes más extendidas
+sería el siguiente: un desarrollador tiene una idea para un nuevo programa o
+mejora de otro ya existente, ante lo cual, indica sus requisitos,
+especificación, presupuesto, etc. Se generan unos bonos y en caso de que el
+presupuesto indicado haya sido cubierto (el desarrollador ha vendido los bonos
+suficientes como para ello), el desarrollador comienza a trabajar en ese
+software, teniendo siempre en cuenta que si el proyecto no llega a ejecutarse,
+la donación en forma de esos bonos es devuelta a sus depositarios. De esta
+manera comenzó el trabajo en la red social distribuida Diaspora, mediante este
+modelo que ha dado en llamarse financiación de las masas (Cloud Sourcing) y que
+es un ejemplo más de las nuevas formas de colaboración que permite la
+tecnología.
+  \item Mediante cooperativas de desarrolladores, de modo que los
+desarrolladores de software libre, en lugar de trabajar individualmente, se
+reúnen a través de algún tipo de asociación similar a una cooperativa y con un
+funcionamiento parecido al de una empresa, salvando el carácter ético con el
+mundo del software libre. Un ejemplo de este tipo de organizaciones es Free
+Developers.
+  \item Mediante un sistema de donaciones (similar a la venta de bonos) en el
+que los usuarios interesados en que un proyecto continúe lanzando nuevas
+versiones, pueden realizar un pago/donación a su autor de manera voluntaria a
+través de su página web y sirviendo como método de financiación para dicho
+desarrollador.
+\end{itemize}
+
+\section{Modelos Mixtos}
+
+A modo de resumen, cabe resaltar que en la práctica, las empresas llevan a cabo
+estrategias basadas en la combinación de varios de los modelos de negocio aquí
+vistos, dándose origen por lo tanto a modelos mixtos. Es más, tanto es así, que
+en raras excepciones esas empresas se dedican únicamente al software libre
+(quizás el más claro de los ejemplos sea el caso de Google, que si bien
+capitanea la plataforma Android, no libera el código fuente y algoritmos de su
+buscador y demás servicios en línea). En cualquier caso, es muy destacable
+analizar cómo cada vez más empresas consideradas como ``tradicionales'' en el
+mundo de la computación, cada vez con más frecuencia prueban líneas de negocio
+basadas en el software libre o lanzan proyectos de este tipo como producto
+estratégico en un determinado mercado, así como el hecho mismo de intentar
+fortalecer la imagen de marca.
+

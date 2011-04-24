@@ -3,8 +3,12 @@
 
 En este capítulo la idea fundamental que se va a presentar es ¿Quién paga el
 desarrollo de los programas?, ¿Por qué alguien paga por un software?, ¿Cómo
-financiar proyectos y recursos?.
-
+financiar proyectos y recursos?
+% <+> 
+Dejaremos de un lado los aspectos éticos y nos centraremos en los
+modelos prácticos que permiten obtener beneficios, no siempre
+económicos.
+% </+>
 
 La financiación de los proyectos pueden llegar de diferentes maneras:
 
@@ -24,7 +28,7 @@ A continuación vamos a comentar más en detalle cada uno de los tipos.
 
 \section{Financiación externa}
 
-Como bien indica esta sección, la financiación proviene de una fuente externa
+Como bien indica el título de esta sección, la financiación proviene de una fuente externa
 que por diversos motivos quiere que el software sea libre. En los siguientes
 apartados vamos a poder ver las diferentes formas de financiación externa que
 existen.
@@ -39,13 +43,38 @@ ser libre.
 Otro modelo de financiación es crear proyectos competitivos, como por ejemplo
 con los planes Avanza, que se evalúan según lo que pueden ofrecer a la
 investigación. Éstos pueden ser software libre.
+% <+> 
+También hay cabida para motivación precompetitiva, donde se
+pretende desarrollar una tecnología que pueda ser explotada en el
+futuro por determinadas empresas. El acceso público al programa
+permite que el rango de grupos que pueden hacer uso de él sea mucho
+más grande, favoreciendo la entrada de PYMES y modestos proyectos de
+investigación.
+% </+>
 
 Muchas veces con este tipo de financiación no se busca recuperar la inversión,
 aunque hay casos en los que se puede recuperar mediante subproductos, pero no
 es la idea.
+% <+>
+Un ejemplo de esto puede ser el provecho que la sociedad obtiene por
+la inversión en tecnologías sanitarias para un hospital público.
+% </+>
 
 Las motivaciones para la financiación de este tipo de proyectos son variadas,
 como científicas, promocionales, sociales o políticas.
+% <+> 
+En las científicas podemos encontrar, por ejemplo, estudios en
+biotecnología, donde los resultados pueden ser reutilizados por otras
+entidades. Las promocionales se basan generalmente en extender un
+estándar, donde el ejemplo más ilustre es el de Internet. Gracias a
+los reducidos costes que suponía implantar TCP, fueron muchos los
+fabricantes que se lanzaron a incluirlo en sus productos. En cuanto a
+la motivación social, se hace presente en ciertas ocasiones cuando
+sale más rentable crear un producto desde cero y publicarlo como
+Software Libre que financiar otro producto de pago ya existente. Un
+ejemplo de esto sería imaginar una sociedad en la que no existiesen
+navegadores web gratuítos.
+% </+>
 
 Dentro de la financiación externa, existen algunas variantes de las cuales
 hablaremos a continuación.
@@ -55,6 +84,16 @@ hablaremos a continuación.
 Normalmente esta financiación está realizada por fundaciones u ONGs, ya bien
 sea para producir software o para solucionar problemas mediante el desarrollo de
 software.
+
+% <+>
+Los motivos de la entidad financiadora suelen ser directos, como el
+caso de la FSF cuya meta es la proliferación del software libre, o
+indirectos como la fundación Open Bioinformatics, que se vale del
+software libre como medio para extender sus productos. También se
+pueden encontrar aquí ejemplos de tecnología de geolocalización, para
+desplegar las posiciones de víctimas, puestos sanitarios o puntos de
+repartición de alimentos tras producirse desastres naturales.
+% </+>
 
 La forma de financiar los proyectos es muy parecida a la que se usa en las
 empresas públicas.
@@ -101,20 +140,60 @@ Google es ésta. RIM está creando WebOS con software libre pero es privativo.
 
 Tenemos varios ejemplos:
 \begin{itemize}
-  \item Con Perl, crearon el software y se recuperó el dinero vendiendo libros.
-  Cuantos más usuarios de Perl más gente compraría el libro. Y en vez de
-  pagar por crear el libro, se pagó porque Perl fuese mejor y tuviese más
-  versiones.
+  % <->
+  %\item Con Perl, crearon el software y se recuperó el dinero vendiendo libros.
+  %Cuantos más usuarios de Perl más gente compraría el libro. Y en vez de
+  %pagar por crear el libro, se pagó porque Perl fuese mejor y tuviese más
+  %versiones.
+  % </->
+  % <+>
+  \item En ocasiones, una entidad invierte en cierta tecnología con el
+    fin de obtener más ventas en productos relacionados donde tienen
+    una alta cuota de mercado. Esta estrategia ha sido realizada en
+    varias ocasiones por la editorial O'Reilly. El caso más conocido
+    es el de su guía sobre el lenguaje de programación Perl. Su libro
+    se convirtió en el mayor referente sobre el tema. Por ello
+    a la editorial le resultaba rentable invertir capital en el
+    desarrollo de este lenguaje. Bien es cierto que terceras partes
+    también se lucraban sin gasto alguno con las inversiones
+    realizadas por O'Reilly, pero era un factor que no les preocupaba,
+    siempre y cuando no cesase su propio crecimiento.
+  % </+>
   \item Con el Hardware, VA (VA-Linux) vendía servidores, y lo que hace ahora es vender
 servidores con Linux preinstalado y pagó para que las versiones de Linux
-de sus servidores corriesen muy bien y sin problemas. Hay casos en los que se
+de sus servidores corriesen muy bien y sin problemas. 
+% <+>
+Es cierto que no existía mucho mercado para máquinas con Linux
+preinstalado, pero tener una cuota del 80\% de dichas ventas suponía
+unos ingresos elevados.
+% </+>
+Hay casos en los que se
 pagan para que hagan el driver para ciertas tarjetas y cuando están disponibles
 para Linux su venta aumenta.
-\item Otro caso son las distribuciones de Linux, como Ubuntu, que se paga para
+\item Otro caso son las distribuciones de Linux, como Ubuntu, que paga para
 que la distribución sea conocida y mucha gente la utilice.
+% <+>
+Ubuntu invierte una gran cantidad en lograr una buena usabilidad y
+mejorar la experiencia de usuario. Otras distribuciones como Red Hat
+utilizan las certificaciones y consultorías como principal fuente de
+ingresos. En ambos casos, lograr que el nombre de la empresa sea
+conocido es de vital importancia.
+% </+>
 \end{itemize}
 
-
+% <+>
+\subsection{Otros modos}
+Obtener los ingresos mediante otros mecanismos ajenos a la venta de
+licencias, tal y como ocurría en el modelo tradicional, ha llevado a
+modelos muy dispares e imaginativos de financiación. Por citar alguno,
+podríamos hablar de mercados puntos de encuentro entre desarrolladores
+y clientes, venta de bonos para financiación (utilizado por el
+proyecto Diaspora), cooperativas de desarrolladores y sistemas de
+donaciones (de manera directa realizando una transferencia o con
+cierta indirección, como la existente en el market de Android, donde
+puedes elegir obtener la misma aplicación sin coste alguno o
+pagando un precio razonable a modo de donación).
+% </+>
 
 \section{Autofinanciados}
 
@@ -131,6 +210,11 @@ puede hacer que después cuando haya que realizar un cambio pueda ofrecer precio
 más baratos que si lo hace otro porque conozco muy bien el producto o bien para
 intentar obtener una marca. Esto se puede dar o bien desarrollando el propio
 programa o bien trabajando en otro software que ya existe.
+% <+>
+La manera más habitual de vender un buen conocimiento es mediante la
+inclusión de varios desarrolladores oficiales del proyecto en el
+propio equipo de trabajo.
+% </+>
 
 Si tenemos un buen conocimiento de un producto podemos vender consultoría,
 adaptación, integración, etc\ldots
@@ -145,6 +229,12 @@ Algunos casos, pueden ser:
   en Europa.
 \end{itemize}
 
+% <+>
+Generalmente, para implantar este modelo, se suele hacer una inversión
+inicial muy fuerte y se espera que el dinero vaya llegando con el
+tiempo. Por ser una práctica con cierto riesgo, se suelen realizar
+estudios de mercado previos.
+% </+>
 
 \subsection{Mejor conocimiento con limitaciones}
 
@@ -163,6 +253,13 @@ libre, y así potencias que paguen la licencia.
 El problema que tiene esto es que las comunidades, pueden crear las partes
 que falten en la parte privativa y eso te hará perder marca y ser el productor
 principal. Como es el caso de OpenOffice y LibreOffice.
+
+% <+> 
+Otro contexto en el que se utiliza este modelo es cuando una empresa o
+individuo es poseedor de cierta patente, lo que imposibilita
+legalmente que determinada parte pueda ser reimplementada por terceras
+personas.
+% </+>
 
 Los proveedores de CRM hacen cosas de este estilo.
 
@@ -236,6 +333,14 @@ donaciones propias, etc\ldots
 Este tipo de financiación está basada en que yo necesito algo y lo desarrollo como
 software libre, de esta manera al publicarse, el código estará más limpio y en un
 futuro puedo encontrar colaboración.
+
+% <+>
+Un ejemplo de este modelo es el que utilizó Cisco en un sistema de
+gestión de impresoras. Llegaron a la conclusión de que no perderían
+nada con su liberación y que era una manera de mejorarlo. Otro efecto
+colateral era sobre el ánimo de los desarrolladores, ya que estaban
+más motivados por trabajar en un proyecto con visibilidad externa.
+% </+>
 
 
 \section{Clasificación de Hecker}

@@ -38,4 +38,141 @@ Tenemos datos registrados de archivos que est\'a en la tabla "file".
 Otra tabla para los datos de las personas involucradas en el proyecto "people".
 
 \section{Algunos an\'alisis}
+En este ejemplo, vamos a ver la evoluci\'on de la aplicaci\'on brasero. Gracias a la herramienta CVSAnalY, podemos obtener los siguientes datos:
 
+\newpage
+\thispagestyle{empty}
+\trm{Numbers of committers per month:} En esta gr\'afica, podemos ver el n\'umero de desarrolladores por mes que han participado en el proyecto. En este caso, aunque en general se mantiene estable, podemos observar que en torno a los meses de febrero, marzo y abril del año 2009, se dispara el n\'umero de colaboradores del proyecto.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/number_of_commiters_per_month}   
+  \caption{Number of committers per month}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Total number of unique files per language:} En esta gr\'afica podemos ver el lenguaje de programaci\'on en el que est\'an escritos los archivos que componen la aplicaci\'on. En el caso de brasero, podemos ver que la gran mayor\'ia del c\'odigo ha sido escrita en ansic.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/total_number_of_unique_files_per_language}  
+  \caption{Total number of unique files per language}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Number of new committers per month:} En la siguiente gr\'afica podemos observar el n\'umero de nuevos desarrolladores que se incorporan al proyecto cada mes. En el caso de brasero, podemos ver un aumento muy significativo en torno a los meses de febrero, marzo y abril del año 2009, incorporando hasta un m\'aximo de 16 nuevos desarrolladores en un mes.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/number_of_new_commiters_per_month}
+  \caption{Number of new commiters per month}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Total number of actions per type:} En el siguiente an\'alisis, podemos ver el tipo de acciones que se realizan en torno al proyecto. El significado de cada una de las letras que podemos ver en la figura es el siguiente:
+
+\begin{itemize}
+\item
+M: \trm{Modified}. Modificaciones habidas en el proyecto.
+\item
+R: \trm{Replaced}. Reemplazamientos realizados.
+\item
+A: \trm{Added}. Ficheros añadidos al proyecto.
+\item
+D: \trm{Deleted}. Ficheros eliminados del proyecto.
+\item
+C: \trm{Copied}. Ficheros copiados.
+\item
+V: \trm{Moved}. Ficheros movidos del proyecto.
+\end{itemize}
+
+En el caso particular de brasero, podemos observar que la gran mayor\'ia de las acciones realizadas han sido modificaciones de los ficheros existentes. Tambi\'en podemos observar que los ficheros añadidos al proyecto componen una parte importante.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/total_numbers_of_actions_per_type}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Number of actions per month:} En el siguiente an\'alisis, podemos ver el n\'umero de acciones totales al mes. En el caso particular de brasero que estamos tratando, podemos ver que los picos de la gr\'afica corresponden con nuevas versiones del software, por eso son los meses donde existe m\'as desarrollo.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/number_of_actions_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Aggregated number of actions per month:} En este an\'alisis, podemos observar si un determinado proyecto se sigue desarrollando o ha sufrido un abandono. En el caso de brasero, podemos que desde Septiembre del 2006 se desarrolla de forma continua y el proyecto tiene una salud excelente.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/aggregated_number_of_actions_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{SLOC per month:} En este an\'alisis podemos observar el n\'umero de l\'ineas de c\'odigo escritas en torno al proyecto a lo largo del tiempo. Un continuo aumento de estas l\'ineas garantiza una buena salud del proyecto. En el caso concreto de brasero, podemos observar como el n\'umero de l\'ineas va aumentando con el paso de los años.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/sloc_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{LOC per month:} Aparte del n\'umero de l\'ineas de c\'odigo de nuestro proyecto, tambi\'en debemos tener en cuenta aspectos como la documentaci\'on, los ficheros de compilaci\'on e instalaci\'on, ... Por ello, a trav\'es de la siguiente grafica podemos observar el n\'umero de l\'ineas totales que componen el proyecto. En el caso de brasero, vemos que como hemos visto en la gr\'afica \trm{SLOC per month}, tambi\'en ha habido un desarrollo similar en esos aspectos del software antes mencionados.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/loc_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Total number of unique files per type:} En el siguiente an\'alisis, podemos observar los tipos de ficheros de los que nuestro proyecto est\'a compuesto. En el caso particular de brasero, podemos observar como la mayor parte del proyecto (en torno al 50%) son l\'ineas de c\'odigo, seguido de cerca por archivos de tipo imagen. Tambi\'en son importantes los archivos de compilaci\'on e instalaci\'on (build) y los archivos de documentaci\'on.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/total_number_of_unique_files_per_type}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Total number of files per month:} En el an\'alisis siguiente, podemos ver el n\'umero total de ficheros que se van añadiendo en torno al proyecto. En el caso particular de brasero, podemos observar como lleva una l\'inea ascendente, incrementando vertiginosamente el ritmo entre Octubre de 2008 y Abril de 2009.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/total_number_of_files_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Number of commits per month:} En la siguiente gr\'afica podemos observar el numero de commits realizado en los repositorios del proyecto. En el caso particular de brasero, vemos que tiene un n\'umero de commits bastante grande, corroborando que es un proyecto muy activo.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/number_of_commits_per_month}
+  \caption{Total number of actions per type}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\trm{Aggregated number of commits per month:} Por \'ultimo, en la siguiente gr\'afica podemos observar el n\'umero acumulado de commits a lo largo de los años. Una curva ascendente anuncia una buena salud del proyecto. En el caso de brasero, podemos ver como esta regla se cumple y vemos una curva que nos garantiza la continuidad del desarrollo en torno al proyecto.
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.9\textwidth]{img/aggregated_number_of_commits_per_month}
+  \caption{Total number of actions per type}
+\end{figure}

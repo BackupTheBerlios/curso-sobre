@@ -1,14 +1,118 @@
-\chapter{Desarrollo de software libre. Organizaci\'on de las comunidades}
+\chapter{Desarrollo de software libre}
 \label{CHAP5:Development}
 \section{Introducci\'on}
-Las reglas de gobierno de las comunidades son muy diversas. Las normas en el software libre tienen que ser muy inclusivas, es decir tienen que estar de acuerdo, para que las personas sigan en la comunidad contribuyendo.
+\section{Proyecto Apache. ASF}
+La primera fundaci\'on que vamos a investigar para ver como se organiza es la fundaci\'on del proyecto Apache, llamada Apache Software Foundation.
 
-El factor primero es el tama\~no, ya que si es peque\~no normalmente no tiene organizaci\'on, pero si es muy grande seguramente tiene una organizaci\'on. Cuando una persona quiere contribuir tiene que ser consciente de la organizaci\'on. Las normas pueden aparecer o no escritas en la documentaci\'on de la organizaci\'on. Si uno es desarrollador debe de cumplir las normas del proyecto. Todo esto se aplica a la econom\'ia de atenci\'on.
+El proyecto Apache comenz\'o en el año 1995, pero hasta el año 1999 no se form\'o una fundaci\'on en torno a \'el. El objetivo principal para la fundaci\'on es ofrecer un paraguas legal y financiero para la viabilidad y continuidad del proyecto Apache.
 
-Vamos a estudiar las organizaciones desde el punto de vista de la organizaci\'on del proyecto. Seguidamente se ver\'a como son las condiciones de contribuci\'on y como se fomentan las contribuciones externas.
+Una de las principales caracter\'isticas de la fundaci\'on Apache es la democracia que impera en la gesti\'on del proyecto. Esto es debido a que consideran que no se deben poner unos criterios muy estrictos para el desarrollo a gente que les dona el tiempo de forma gratuita. 
 
-A continuaci\'on vamos a estudiar algunos proyectos.
+Otra de las caracter\'isticas m\'as significativas de la fundaci\'on Apache es el gran reparto de pesos que existe en la jerarqu\'ia de la organizaci\'on. Este hecho persigue que ninguna empresa o \trm{lobby} pueda hacerse cargo del proyecto con un inter\'es propio en vez de un inter\'es por toda la comunidad.
 
-\section{Proyecto Apache (ASF)}
-\section{OpenOffice}
+Dentro de la fundaci\'on Apache existe una jerarqu\'ia donde est\'a estructurado el grado de aportaci\'on que un usuario aporta al proyecto. Gracias a esta estructura, se persigue que la gente que m\'as tiempo ha donado a la viabilidad del proyecto sea la que m\'as poder de decisi\'on tenga en torno a ella. Existen cinco tipos diferentes de usuario:
+
+\begin{itemize}
+\item
+\trm{Usuarios}: en general, aportan poco al proyecto, pero proporcionan la realimentaci\'on necesaria para que el proyecto funcione, poni\'endose en contacto con la fundaci\'on para informar de erratas, realizan peticiones donde indican si una nueva funcionalidad de Apache ser\'ia interesante bajo su punto de vista, ...
+\item
+\trm{Desarrolladores}: este tipo de usuarios suelen contribuir al proyecto de una forma activa, ya sea contribuyendo con c\'odigo o documentaci\'on. Suelen estar incluidos en la lista de correos y se pueden mostrar cr\'iticos con decisiones tomadas por el proyecto.
+\item
+\trm{Commiters}: son desarrolladores con acceso de escritura al repositorio de Apache. Para ser \trm{commiter} del proyecto Apache se debe firmar una cla\'usula llamada CLA de la cual hablaremos m\'as adelante. Se intuye que en la actualidad existen m\'as de 800 desarrolladores con permiso de escritura en el repositorio.
+\item
+\trm{Miembro del PMC}: son desarrolladores o \trm{commiters} elegidos por el board. Toman decisiones sobre el camino a seguir dentro de su subproyecto, como decidir quien pasa a ser \trm{commiter}
+\item
+\trm{Miembro de la ASF}: son los miembros de la fundaci\'on. La \'unica forma de poder ser elegido es ser votado por el resto de miembros. Esto persigue que solo consigan ser miembros aquellas personas que han aportado mucho a la comunidad. Lo \'unico que se eval\'ua a la hora de elegir a un nuevo miembro son los m\'eritos realizados con relaci\'on al proyecto Apache, por lo que existe una gran meritocracia en torno a esta fundaci\'on.
+\end{itemize}
+
+La estructura de la fundaci\'on Apache es la siguiente:
+\subsection{Board of governors}
+Esta estructura se encarga de guiar los pasos de la fundaci\'on en las pol\'iticas econ\'omicas, legales, ... Pero no se meten en como se debe desarrollar c\'odigo o hacia donde debe encaminarse un subproyecto determinado, aunque tienen el poder suficiente para decidirlo ya que ellos nombran al PMC (Project Management Committees) que son los que encargados de cada subproyecto.
+
+Cada año son elegidos 9 miembros de entre todos los miembros de la ASF para formar parte de esta estructura.
+
+Se encargan principalmente de asignar recursos econ\'omicos a los subproyectos, identificar cuales de ellos son los subproyectos con comit\'es propios, nombrar \trm{officers} y al \trm{chair} del PMC (Project Management Committees) dentro de cada subproyecto, ...
+
+\subsection{Officers}
+Por cada uno de los subproyectos pertenecientes a la fundaci\'on Apache, el \trm{Board} elige un equipo para ser el brazo ejecutivo de la ASF en \'el. Este equipo est\'a formado por un \trm{chair}, un presidente, un tesorero y un secretario.
+
+\subsection{Project Management Committees(PMC)}
+Para definir los procedimientos diarios de la comunidad o subproyecto, el \trm{Board} elige a un \trm{chair} para estos menesteres. Posteriormente, el \trm{chair} nombrado, elige su equipo, el cual suele estar formado por al menos un oficial de la ASF y un commiter.
+
+La gesti\'on o reglas de funcionamiento del PMC es bastante peculiar, ya que no siguen unas reglas globales, sino que cada subproyecto dicta las suyas. Esto es bueno ya que exige que haya consenso entre un gran n\'umero de personas dentro de la comunidad y establece una falta de jerarqu\'ia dentro de \'el, siendo esto positivo al impedir a una empresa o grupo de personas hacerse cargo de la toma de decisiones.
+
+La toma de decisiones corre a cargo de los desarrolladores, haci\'endose uso de un procedimiento muy peculiar llamado consenso perezoso. El consenso perezoso consiste en, si se publica en las listas de correo (m\'etodo de comunicaci\'on predominante) que se desea realizar un cambio, este queda aprobado autom\'aticamente a no ser que alguien exponga una queja o no est\'e de acuerdo con dicho cambio. Este consenso perezoso permite que la comunidad evolucione a un ritmo elevado ya que no es necesario que los colaboradores den su visto bueno a la hora de realizar un cambio o mejora al proyecto, si no que por defecto, se realizar\'a, y en caso de que alguien no est\'e de acuerdo, se debatir\'a si se aplica la mejora o no.
+
+\subsection{Formaci\'on de nuevos proyectos}
+Dentro de la fundaci\'on Apache, existe un incubador donde todo el mundo tiene permiso de escritura (previa petici\'on). Este incubador sirve para que desarrolladores que quieran crear un nuevo proyecto puedan ponerse de acuerdo y tener un entorno com\'un donde trabajar. En caso de que alguno de estos proyectos tenga futuro, se desarrolle a una buena velocidad y tenga una buena funcionalidad, se puede elevar una petici\'on al \trm{Board} para poder formar un proyecto nuevo.
+
+La otra forma de crear un proyecto nuevo dentro de la ASF, consiste en partir o separar un proyecto existente para crear proyectos nuevos m\'as pequeños, ya que se considera que estos nuevos subproyectos tienen entidad suficiente para formar comunidades por si mismos.
+
+\subsection{Licencias y Software grants}
+Una vez que los miembros han elegido a un nuevo \trm{committer}, este debe firmar una licencia llamada ICLA (Individual Contributor License Agreement) mediante la cual cedemos los derechos adquiridos a la hora de escribir el software a la fundaci\'on Apache.
+
+En caso de desarrollar software para Apache y nos encontremos en la situaci\'n de estar empleador en otra empresa, es necesario firmar la licencia llamada CCLA (Corporate Contributor License Agreement) mediante la cual especificamos que el poseedor de los derechos sobre el software es Apache y no la empresa en la que estemos contratados. Esto es positivo, ya que si no alguna empresa podr\'ia reclamar los derechos de Apache al haber contribuido de una forma muy extensa dentro de algunos de los subproyectos.
+
+Por \'ultimo, en caso de que individuos o empresas donen software al proyecto Apache, se exige que firmen la licencia Software grant mediante la cual Apache evita que dentro de un tiempo estos individuos o empresas puedan reclamar la autor\'ia del software. Estas donaciones, deben ir a la incubadora a no ser que un PMC los acepte como suyos.
+
+\newpage
+\section{OpenOffice.org}
+La estructura de la fundaci\'on de \trm{OpenOffice.org} es m\'as simple que la de Apache.
+
+Existe un comit\'e llamado \trm{Community Council} que se encarga de guiar el proyecto de forma general. Al contrario que en otras estructuras, este comit\'e no tiene poder de decisi\'on en temas como la propiedad intelectual del c\'odigo, temas de licencias, recursos de Sun, ... Otras funciones desarrolladas por este comit\'e pueden ser, actuar como \'arbitro de la comunidad, representar a la fundaci\'on en el mundo, ...
+
+Cada año, los desarrolladores realizan una votaci\'on para ver quien forma parte de este comit\'e, aunque existen unas cuotas mediante las cuales debe haber un n\'umero m\'inimo de desarrolladores pertenecientes a Sun (ahora Oracle) y otro n\'umero m\'inimo que no pertenezca.
+
+Aparte de este comit\'e que se encarga de generalidades dentro del proyecto, existe otro m\'as enfocado a responsabilidades t\'ecnicas, llamado \trm{Engineering Steering Committee}.
+
+Dentro de \trm{OpenOffice.org}, existen cuatro tipos distintos de papeles en los que un usuario puede desempeñar su rol:
+\begin{itemize}
+\item
+\trm{Miembros}: son aquellos usuarios que tienen una cuenta en \trm{OpenOffice.org}
+\item
+\trm{Desarrolladores}: son aquellos miembros que gracias a sus contribuciones y dedicaci\'on al proyecto, tienen acceso de escritura al repositorio de \trm{OpenOffice.org}.
+\item
+\trm{Desarrolladores de contenido}: son aquellos miembros que se encargan de la documentaci\'on, estructuraci\'on del proyecto, ... pero no se ocupan del c\'odigo de la aplicaci\'on. Tienen acceso de escritura al repositorio de documentaci\'on.
+\item
+\trm{L\'ideres de proyecto}: por cada proyecto, son elegidos cada año dos l\'ideres, que se encargar\'an de tomar decisiones sobre el c\'odigo, tienen la responsabilidad del buen funcionamiento, ... Son elegidos por los desarrolladores del proyecto, aunque el \trm{Community Council} se reserva el derecho de poder cesarlos.
+\end{itemize}
+
+Las licencias que se manejan dentro de la comunidad \trm{OpenOffice.org} tambi\'en son algo especiales. Todo el c\ódigo del proyecto estaba protegido por una doble licencia, por un lado LGPL y por el otro SISSL. Esta \'ultima licencia ya se ha quedado obsoleta y desde 2005 Sun no recomienda su uso, por lo que todo el c\'odigo actual depende s\'olo de LGPL.
+
+Por otro lado, toda la documentaci\'on del proyecto est\'a protegida por otro tipo de licencia llamada Public Document License.
+
+Por \'ultimo, todas las contribuciones importantes, est\'an protegidas bajo un tipo de licencia especial llamado Joint Copyright Assignment en el que Sun y el autor comparten el copyright sobre el c\'odigo.
+
+Para acabar con este apartado, debemos comentar que la fundaci\'on \trm{OpenOffice.org} tambi\'en cuenta con un incubador donde poder desarrollar nuevos proyectos. Tras el paso de seis meses, se puede elevar una petici\'on para ser considerados miembros de todo derecho dentro de la fundaci\'on. De esta forma, los proyectos aceptados cuentan con un gran inter\'es ya que el mundo del software se caracteriza por el escaso tiempo de vida de los proyectos con poco calado.
+
+\newpage
 \section{Mozilla}
+Netscape fue el primer navegador del mercado all\'a por el año 1995. Se distribu\'ia de forma gratuita pero no pod\'ia ser considerado software libre. A la vista de todo esto, Microsoft (de una forma un poco marrullera y contra los dictados de la libre competencia) consigui\'o arrebatarle el puesto con Internet Explorer.
+
+En 1997, los ejecutivos de Netscape, decidieron que la \'unica forma en la que pod\'ian hacer frente a Microsoft ser\'ia publicando el c\'odigo fuente e intentar aprovecharse de las comunidades de software libre para intentar ganar la batalla. Esto se convirti\'o en un hito determinante en la historia del software libre, porque nunca antes una compañ\'ia con un inter\'es comercial hab\'ia decidido apostar por el software libre como modelo de negocio. En marzo de 1998 el c\'odigo fue publicado eliminando las contribuciones de terceras empresas que no aceptaron el cambio de licencia. Esto provoc\'o que el c\'odigo fuente liberado fuese de una calidad discutible y funcionase a duras penas.
+
+Aparte de este problema, tambi\'en ten\'ian que decidir que tipo de licencia iban a utilizar para proteger su c\'odigo. Despu\'es de estudiar todos los tipos de licencias de software libre, decidieron que ninguna de ellas se ajustaba a los criterios que una compañ\'ia comercial como ellos ten\'ian pensado. Como consecuencia de esto, se cre\'o un nuevo tipo de licencia llamada NPL. Esta licencia otorgaba unos derechos especiales a Netscape Inc. que a la comunidad libre no hizo gracia (especialmente a la Free Software Foundation), por lo que tras severas cr\'iticas, Netscape decidi\'o crear otro tipo de licencia llamada MPL con las mismas condiciones eliminando los derechos privilegiados de Netscape. La decisi\'on final fue que todo el c\'odigo proveniente de Netscape estuviese protegido por la licencia NPL y el resto del nuevo c\'odigo producido con la ayuda de la comunidad, estuviese protegido bajo la MPL.
+
+Despu\'es de un tortuoso camino, en 2003 Netscape (propiedad de AOL) decidi\'o abandonar la tutela del proyecto. Debido a este abandono, proporcion\'o a la comunidad una donaci\'on de unos dos millones de dolares para que pudiese continuar con su trabajo. Para terminar con la historia temprana de Mozilla, comentar que despu\'es del abandono de Netscape se procedi\'o a relicenciar todo su c\'odigo bajo alguna de las licencias GPL, LGPL y MPL.
+
+En la actualidad, el personal de la fundaci\'on est\'a formado por unos diez empleados que se encargan de tomar decisiones ejecutivas, guiar el proyecto, buscar financiaci\'on, ... Estas personas se encuentran trabajando a tiempo completo y est\'an a sueldo de la propia fundaci\'on.
+
+Como todas las grandes fundaciones, la fundaci\'on Mozilla est\'a formada por numerosos subproyectos. Dentro de estos subproyectos, el personal de la fundaci\'on elige a un n\'umero de contribuidores que se encargan de coordinar el subproyecto. Estos project managers son conocidos como \trm{drivers}.
+
+Tambi\'en existe el rol dentro de Mozilla de los dueños de los m\'odulos, que se encargan de tomar decisiones de todo lo que acontece al c\'odigo.
+
+Por \'ultimo, antes de que Mozilla acepte la contribuci\'on de cualquier tipo de c\'odigo, este ha de ser supervisado por dos super-reviewers, que se encargan de dar su aprobaci\'on para que el c\'odigo pueda ser subido al repositorio.
+
+Para tener permiso de escritura dentro de Mozilla, los candidatos deben pasar un proceso de aceptaci\'on. En este proceso se hace especial hincapi\'e en los conocimientos y contribuciones del candidato al proyecto, y cada uno de estos candidatos suelen venir avalados por el patrocinio de otro commiter. Una vez que se ha conseguido pasar el proceso de aceptaci\'on, se debe firmar una clausula llamada CVS Contributor Form en las que indicamos que nos ajustamos a aceptar proteger nuestro c\'odigo bajo alguna de las licencias aprobadas por el proyecto (MPL, GPL, LGPL) y en la que declaremos que todo el c\'odigo cedido es propio o tenemos licencia de nuestro empleador.
+
+Por \'ultimo, comentar que la fundaci\'on Mozilla est\'a muy enfocada a la econom\'ia, siendo la fundaci\'on m\'as rica con una diferencia abismal, ya que se considera que tienen m\'as de 100 millones de dolares. Esto se debe a que el mercado de los navegadores es muy vistoso y cuenta con poderosos padrinos a los que interesa que Microsoft no tenga todo el poder en este mercado como puede ser Google.
+
+\newpage
+\section{Linux}
+Como \'ultimo proyecto de software libre que vamos a comentar en estos apuntes, hemos decidido evaluar la forma de trabajar que tiene la comunidad formada en torno al kernel de Linux.
+
+Uno de los raasgos caracter\'isticos, es que Linus junto con sus cuatro o cinco colaboradores m\'as cercanos deciden absolutamente todo. En contra de lo que pueda parecer, este tipo de funcionamiento ha encajado perfectamente en el desarrollo del kernel de Linux, tanto que esta estructura es conocida comunmente como \trm{una dictadura benevolente}.
+
+Es una fundaci\'on extremadamente dif\'icil de manejar, ya que existen much\'isimos intereses comerciales y m\'ultiples empresas dentro del desarrollo del n\'ucleo.
+
+Por \'ultimo, comentar que se considera muy ineficiente la forma de trabajar en esta comunidad, ya que por ejemplo para aplicar un parche, se pueden haber mandado 10 o 12 implementaciones de diferentes desarrolladores cuando al final solo una de ellas va a ser escogida, dando la impresi\'on de que el tiempo de los desarrolladores cuyos parches no han sido escogidos, ha sido gastado en balde.
